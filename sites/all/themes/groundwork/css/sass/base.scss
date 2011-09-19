@@ -1,3 +1,25 @@
+@import "compass/reset";
+@import "960/grid";
+
+/* 960 Grid */
+#page {
+  @include grid-container;
+}
+
+#primary-menu-elements, 
+#header-elements,
+#main-elements {
+  @include grid-unit-base;
+}
+
+#primary-menu-elements,
+#header-elements,
+#main-elements {
+  @include grid-width(12); 
+}
+
+
+
 /** 
  * $Id$ 
  * groundworks.com
@@ -118,16 +140,13 @@
 /* Containers and helpers. */
 #top-elements,
 #leaderboard-elements,
-#header-elements,
-#primary-menu-elements,
 #menu-bar-elements,
 #messages-help-elements,
 #secondary-content-elements,
 #container-elements,
 #tertiary-content-elements,
 #secondary-menu-elements,
-#footer-elements,
-#main-elements {
+#footer-elements {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -135,14 +154,13 @@
 }
 
 
+
+
 #container-top,
 #container-leaderboard,
-#container-header,
-#container-primary-menu,
 #container-menu-bar,
 #container-messages-help,
 #container-secondary-content,
-#container,
 #container-tertiary-content,
 #container-secondary-menu,
 #container-footer {

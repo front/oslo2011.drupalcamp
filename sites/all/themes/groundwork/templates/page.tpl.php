@@ -96,7 +96,7 @@
   <?php print $scripts; ?>
 </head>
 <body class="<?php print $classes; ?>">
-
+<div id="page">
   <div id="skip-nav" class="element-invisible">
     <a href="#main-content"><?php print t('Skip to main content'); ?></a>
   </div>
@@ -214,7 +214,7 @@
   
   
   <div id="container-elements" class="clearfix">
-    <div id="container" class="rounded-corners">
+    <div id="container">
     
     <div id="columns"><div class="columns-inner clearfix">
 
@@ -324,7 +324,7 @@
       </div> <!-- /container-footer -->    
   </div> <!-- /footer-elements -->
   <?php endif; ?>
-
+</div>
   <?php print $closure ?>
 
 </body>

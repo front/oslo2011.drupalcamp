@@ -1,3 +1,7 @@
+/* Compass import */
+@import "compass/css3";
+@import "style-variables";
+
 /**
  * $Id$
  * perceptivity.eu
@@ -16,7 +20,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: url("groundwork-images/background.jpg") repeat-x fixed left bottom #CBECF3;
+  background-color: #F9F9F9;
   color: #5f5f5f;
   font-family: Verdana, Geneva, "DejaVu Sans", sans-serif;
 }
@@ -238,8 +242,10 @@ a {
 }
 
 #primary-menu-elements {
-  border-bottom: 7px solid #F79031;
-  background-color: #02A0C7;
+  background: #EDEDF0 url(../images/bg-main-menu.png) repeat-x 0 bottom;
+  @include border-radius(0 0 10px 10px);
+  height: 50px;
+  
 }
 
 #main-elements {
@@ -269,11 +275,7 @@ a {
 }
 
 #container {
-  min-height: 250px;
-  background-color: #fff;
-  -moz-box-shadow: 0 0 15px 1px #CCC;
-  -webkit-box-shadow: 0 0 15px 1px #CCC;
-  box-shadow: 0 0 15px 1px #CCC;
+
 }
 
 #container-primary-menu {
@@ -284,9 +286,7 @@ a {
   margin-top: 20px;
   padding-top: 10px;
   background-color: #F79031;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
+
 }
 
 #top-bar {
@@ -302,9 +302,6 @@ a {
   color: #dfdfdf;
   min-height: 7px;
   min-width: 7px;
-  -moz-border-radius: 0 0 7px 7px;
-  -webkit-border-radius: 0 0 7px 7px;
-  border-radius: 0 0 7px 7px;
 }
 
 .logged-in #top-bar {
@@ -353,9 +350,6 @@ a {
   display: block;
   white-space: nowrap;
   color: #eff3ff;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
 }
 
 #top-bar div.item-list ul li a:hover {
@@ -378,10 +372,7 @@ a {
 }
 
 .content-inner {
-  background: #ffffff;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
+
 }
 
 /* Main content wrappers*/
@@ -578,10 +569,9 @@ a {
 
 /* #branding wraps #logo, #site-name and #site-slogan. */
 #branding {
-  width: 600px;
   float: left;
+  padding: 0 !important;
   clear: none !important;
-  padding: 0 0 0 20px;
   display: inline;
 }
 
@@ -790,44 +780,38 @@ span.search-info-upload {
 
 /* Class on the ul */
 .primary-links {
-  margin: 0 10px;
-  padding: 0;
-}
+  margin: 0; 
+  padding: 10px 0 0;
 
-/* Modify the margin to set tab spacings. */
-.primary-links li {
-  float: left;
-  margin: 0 20px 0 0;
-  padding: 0;
-  display: inline;
-  list-style: none;
-}
-
-.primary-links li.last {
-  margin-right: 0;
-}
-
-.primary-links li a {
-  padding: 7px 14px;
-  display: block;
-  white-space: nowrap;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 80%;
-}
-
-/* Set pseudo class styles. */
-.primary-links li a:link,
-.primary-links li a:visited {
-  color: #ffffff;
-}
-
-.primary-links li a:hover,
-.primary-links li a:active,
-.primary-links li a:focus {
-  background: #F79031;
-  color: #634220;
-  text-decoration: none;
+  li {
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 0;
+    display: inline;
+    list-style: none;
+    
+    &.last {
+      margin-right: 0;
+    }
+    
+    a {
+      white-space: nowrap;
+      color: $main-menu-color;
+      text-transform: uppercase;
+      
+      &:link,
+      &:visited {
+        color: $main-menu-color;
+      }
+      
+      &:hover,
+      &:active,
+      &:focus {
+        color: $main-menu-hover-color;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 /* Primary first and last classes. */
@@ -1351,9 +1335,6 @@ ul.links li.print_pdf a {
   color:#ffffff;
   margin-bottom:20px;
   padding:7px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
 }
 
 /* Wrapper class for each individual comment. */
@@ -1361,9 +1342,6 @@ ul.links li.print_pdf a {
   border:1px solid #BDBDBD;
   margin:0 0 1.5em;
   padding: 7px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
   min-height: 100px;
 }
 
@@ -1541,20 +1519,6 @@ ul.links li.comment_delete a {
   z-index: 0;
 }
 
-.block-inner {
-  padding: 7px; /* Block inner div */
-  background: #CBECF3;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
-}
-
-.block-no-rounded-corners .block-inner {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-
 .white .block-inner {
   background: #ffffff;
 }
@@ -1604,7 +1568,6 @@ ul.links li.comment_delete a {
 }
 
 .red .block-inner {
-  background: #F79031;
 }
 
 .light-red .block-inner {
@@ -1766,21 +1729,11 @@ ul.links li.comment_delete a {
 
 /* Block Content */
 .block-content {
-  margin: 0 auto;
-  background: #CBECF3;
-  min-height: 15px;
-  min-width: 15px;
-  position: relative;
-  z-index: 0;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
+  
 }
 
 .block-content-no-rounded-corners .block-content {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
+
 }
 
 .block-content .block-content-inner {
@@ -2390,34 +2343,6 @@ fieldset {
 }
 
 #forum div.indent {
-}
-
-/**********************************************************
- *                   Rounded Corners
- **********************************************************/
-.rounded-corners {
-  min-height: 7px;
-  min-width: 7px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
-}
-
-.rounded-top-corners {
-  min-height: 7px;
-  min-width: 7px;
-  -moz-border-radius-topleft: 7px;
-  -moz-border-radius-topright: 7px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -webkit-border-top-left-radius: 7px;
-  -webkit-border-top-right-radius: 7px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
 #book-navigation-4 {
