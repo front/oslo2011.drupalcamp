@@ -1,0 +1,326 @@
+; $Id$
+
+;----------// Theme Information
+
+  name        = Groundwork
+  description = A highly configurable theme for Drupal Rockstars by <b><a href="http://websitecrew.com">Website Crew</a></b>. For documentation and support, please visit <a href="http://www.perceptivity.eu">Perceptivity</a>
+  core        = 6.x
+  engine      = phptemplate
+  screenshot  = screenshot.png
+
+;----------// Stylesheets
+
+  stylesheets[all][] = css/base.css
+  stylesheets[all][] = css/style.css
+
+;----------// jQuery Plugins and JavaScripts
+
+  scripts[] = js/gw-scripts.js
+  scripts[] = js/jquery.overlabel.js
+
+;----------// Regions
+  regions[leaderboard]       = Leaderboard
+  regions[header]            = Header Region
+  regions[highlight]         = Highlight
+  regions[menu_bar]          = Menu Bar
+  regions[secondary_content] = Secondary Content
+  regions[content_top]       = Content Top
+  regions[content_aside]     = Content Aside
+  regions[content]           = Main Content
+  regions[content_bottom]    = Content Bottom
+  regions[left]              = Sidebar First
+  regions[right]             = Sidebar Last
+  regions[tertiary_content]  = Tertiary Content
+  regions[footer]            = Footer
+
+;----------// Skinr Styles
+
+  ; The following classes require the Skinr module, http://drupal.org/project/skinr
+  ; Groundwork includes native support for Skinr classes on nodes, blocks and views.
+
+  ; Grids - 960px, 16 column grid classes, with a single 12 grid class (4-12 for 3x320 layout)
+  skinr[gw-grid][title] = Width
+  skinr[gw-grid][type] = select
+  skinr[gw-grid][description] = Select the width for this block. All blocks with widths set will float left to align themselves horizontally. A block with no width set will take up the full with of the region (and clear the other blocks above it). This allows you to build complex block layouts in sidebars and other regions.
+  skinr[gw-grid][features][] = block
+  skinr[gw-grid][features][] = panels_pane
+  
+  skinr[gw-grid][options][1][label] = 60px
+  skinr[gw-grid][options][1][class] = grid-1
+  skinr[gw-grid][options][2][label] = 120px
+  skinr[gw-grid][options][2][class] = grid-2-16
+  skinr[gw-grid][options][3][label] = 160px
+  skinr[gw-grid][options][3][class] = grid-2-12
+  skinr[gw-grid][options][4][label] = 180px
+  skinr[gw-grid][options][4][class] = grid-3
+  skinr[gw-grid][options][5][label] = 240px
+  skinr[gw-grid][options][5][class] = grid-4-16  
+  skinr[gw-grid][options][6][label] = 300px
+  skinr[gw-grid][options][6][class] = grid-5
+  skinr[gw-grid][options][7][label] = 320px
+  skinr[gw-grid][options][7][class] = grid-4-12
+  skinr[gw-grid][options][8][label] = 360px
+  skinr[gw-grid][options][8][class] = grid-6
+  skinr[gw-grid][options][9][label] = 420px
+  skinr[gw-grid][options][9][class] = grid-7
+  skinr[gw-grid][options][10][label] = 480px
+  skinr[gw-grid][options][10][class] = grid-8  
+  skinr[gw-grid][options][11][label] = 540px
+  skinr[gw-grid][options][11][class] = grid-9
+  skinr[gw-grid][options][12][label] = 600px
+  skinr[gw-grid][options][12][class] = grid-10
+  skinr[gw-grid][options][13][label] = 660px
+  skinr[gw-grid][options][13][class] = grid-11
+  skinr[gw-grid][options][14][label] = 720px
+  skinr[gw-grid][options][14][class] = grid-12 
+  skinr[gw-grid][options][15][label] = 780px
+  skinr[gw-grid][options][15][class] = grid-13
+  skinr[gw-grid][options][16][label] = 840px
+  skinr[gw-grid][options][16][class] = grid-14
+  skinr[gw-grid][options][17][label] = 900px
+  skinr[gw-grid][options][17][class] = grid-15
+  skinr[gw-grid][options][18][label] = 960px
+  skinr[gw-grid][options][18][class] = grid-16
+  
+  ; Rounded Corners
+  skinr[gw-block-no-rounded-corners][title] = Rounded Corners
+  skinr[gw-block-no-rounded-corners][description] = Removes borders and rounded corners in block, block content or both.
+  skinr[gw-block-no-rounded-corners][features][] = block
+  skinr[gw-block-no-rounded-corners][options][1][label] = Deactivate rounded corners (outer)
+  skinr[gw-block-no-rounded-corners][options][1][class] = block-no-rounded-corners
+  skinr[gw-block-no-rounded-corners][options][2][label] = Deactivate rounded corners on block content
+  skinr[gw-block-no-rounded-corners][options][2][class] = block-content-no-rounded-corners
+  
+  ; Box Color classes
+  skinr[gw-box-color-classes][title] = Block Color
+  skinr[gw-box-color-classes][type] = select
+  skinr[gw-box-color-classes][description] = Background color of the block.
+  skinr[gw-box-color-classes][features][] = block
+  skinr[gw-box-color-classes][options][1][label] = white
+  skinr[gw-box-color-classes][options][1][class] = white
+  skinr[gw-box-color-classes][options][2][label] = grey
+  skinr[gw-box-color-classes][options][2][class] = grey
+  skinr[gw-box-color-classes][options][3][label] = dark-grey
+  skinr[gw-box-color-classes][options][3][class] = dark-grey
+  skinr[gw-box-color-classes][options][4][label] = light-grey
+  skinr[gw-box-color-classes][options][4][class] = light-grey
+  skinr[gw-box-color-classes][options][5][label] = blue
+  skinr[gw-box-color-classes][options][5][class] = blue
+  skinr[gw-box-color-classes][options][6][label] = dark-blue
+  skinr[gw-box-color-classes][options][6][class] = dark-blue
+  skinr[gw-box-color-classes][options][7][label] = light-blue
+  skinr[gw-box-color-classes][options][7][class] = light-blue
+  skinr[gw-box-color-classes][options][8][label] = sky-blue
+  skinr[gw-box-color-classes][options][8][class] = sky-blue
+  skinr[gw-box-color-classes][options][9][label] = red
+  skinr[gw-box-color-classes][options][9][class] = red
+  skinr[gw-box-color-classes][options][10][label] = dark-red
+  skinr[gw-box-color-classes][options][10][class] = dark-red
+  skinr[gw-box-color-classes][options][11][label] = light-red
+  skinr[gw-box-color-classes][options][11][class] = light-red
+  skinr[gw-box-color-classes][options][12][label] = green
+  skinr[gw-box-color-classes][options][12][class] = green
+  skinr[gw-box-color-classes][options][13][label] = dark-green
+  skinr[gw-box-color-classes][options][13][class] = dark-green
+  skinr[gw-box-color-classes][options][14][label] = light-green
+  skinr[gw-box-color-classes][options][14][class] = light-green
+  skinr[gw-box-color-classes][options][15][label] = brown
+  skinr[gw-box-color-classes][options][15][class] = brown
+  skinr[gw-box-color-classes][options][16][label] = dark-brown
+  skinr[gw-box-color-classes][options][16][class] = dark-brown
+  skinr[gw-box-color-classes][options][17][label] = light-brown
+  skinr[gw-box-color-classes][options][17][class] = light-brown
+  
+  ; Box Color classes
+  skinr[gw-box-inner-color-classes][title] = Block Content Color
+  skinr[gw-box-inner-color-classes][type] = select
+  skinr[gw-box-inner-color-classes][description] = Background color of the block's content.
+  skinr[gw-box-inner-color-classes][features][] = block
+  skinr[gw-box-inner-color-classes][options][1][label] = white
+  skinr[gw-box-inner-color-classes][options][1][class] = content-white
+  skinr[gw-box-inner-color-classes][options][2][label] = grey
+  skinr[gw-box-inner-color-classes][options][2][class] = content-grey
+  skinr[gw-box-inner-color-classes][options][3][label] = dark-grey
+  skinr[gw-box-inner-color-classes][options][3][class] = content-dark-grey
+  skinr[gw-box-inner-color-classes][options][4][label] = light-grey
+  skinr[gw-box-inner-color-classes][options][4][class] = content-light-grey
+  skinr[gw-box-inner-color-classes][options][5][label] = blue
+  skinr[gw-box-inner-color-classes][options][5][class] = content-blue
+  skinr[gw-box-inner-color-classes][options][6][label] = dark-blue
+  skinr[gw-box-inner-color-classes][options][6][class] = content-dark-blue
+  skinr[gw-box-inner-color-classes][options][7][label] = light-blue
+  skinr[gw-box-inner-color-classes][options][7][class] = content-light-blue
+  skinr[gw-box-inner-color-classes][options][8][label] = sky-blue
+  skinr[gw-box-inner-color-classes][options][8][class] = content-sky-blue
+  skinr[gw-box-inner-color-classes][options][9][label] = red
+  skinr[gw-box-inner-color-classes][options][9][class] = content-red
+  skinr[gw-box-inner-color-classes][options][10][label] = dark-red
+  skinr[gw-box-inner-color-classes][options][10][class] = content-dark-red
+  skinr[gw-box-inner-color-classes][options][11][label] = light-red
+  skinr[gw-box-inner-color-classes][options][11][class] = content-light-red
+  skinr[gw-box-inner-color-classes][options][12][label] = green
+  skinr[gw-box-inner-color-classes][options][12][class] = content-green
+  skinr[gw-box-inner-color-classes][options][13][label] = dark-green
+  skinr[gw-box-inner-color-classes][options][13][class] = content-dark-green
+  skinr[gw-box-inner-color-classes][options][14][label] = light-green
+  skinr[gw-box-inner-color-classes][options][14][class] = content-light-green
+  skinr[gw-box-inner-color-classes][options][15][label] = brown
+  skinr[gw-box-inner-color-classes][options][15][class] = content-brown
+  skinr[gw-box-inner-color-classes][options][16][label] = dark-brown
+  skinr[gw-box-inner-color-classes][options][16][class] = content-dark-brown
+  skinr[gw-box-inner-color-classes][options][17][label] = light-brown
+  skinr[gw-box-inner-color-classes][options][17][class] = content-light-brown
+  
+  ; Content alignment
+  skinr[gw-align-content][title] = Content alignment
+  skinr[gw-align-content][type] = select
+  skinr[gw-align-content][options][1][label] = Center content within its container
+  skinr[gw-align-content][options][1][class] = gw-center-content
+  skinr[gw-align-content][options][2][label] = Align content to the right within its container
+  skinr[gw-align-content][options][2][class] = gw-align-right-content
+  skinr[gw-align-content][options][3][label] = Align content to the left within its container
+  skinr[gw-align-content][options][3][class] = gw-align-left-content
+  
+
+  ; Additional menu styles
+  skinr[gw-menu][title] = Menu layout
+  skinr[gw-menu][type] = select
+  skinr[gw-menu][description] = Different layouts and alignment options for your menus
+  skinr[gw-menu][features][] = block
+  skinr[gw-menu][features][] = panels_pane
+  skinr[gw-menu][options][1][label] = Horizontal inline menu
+  skinr[gw-menu][options][1][class] = gw-inline-menu clearfix
+  skinr[gw-menu][options][2][label] = Multi-column menu with headers
+  skinr[gw-menu][options][2][class] = gw-multicolumn-menu clearfix
+  
+  ; Semantic classes
+  skinr[gw-semantic-classes][title] = Semantic classes
+  skinr[gw-semantic-classes][type] = select
+  skinr[gw-semantic-classes][description] = Add relevant semantic classes. Based on <a href="http://dev.w3.org/html5/spec/Overview.html">HTML 5</a>.
+  skinr[gw-semantic-classes][features][] = block
+  skinr[gw-semantic-classes][features][] = panels_pane
+  skinr[gw-semantic-classes][options][1][label] = .section
+  skinr[gw-semantic-classes][options][1][class] = section
+  skinr[gw-semantic-classes][options][2][label] = .aside
+  skinr[gw-semantic-classes][options][2][class] = aside
+  skinr[gw-semantic-classes][options][3][label] = .nav
+  skinr[gw-semantic-classes][options][3][class] = nav
+
+
+;----------// Theme Setting Defaults
+
+  settings[breadcrumb_display]                = 'yes'
+  settings[breadcrumb_separator]              = ' &#187; '
+  settings[breadcrumb_home]                   = 0
+  settings[breadcrumb_trailing]               = 0
+  settings[breadcrumb_title]                  = 0
+
+  settings[search_snippet]                    = 1
+  settings[search_info_type]                  = 1
+  settings[search_info_user]                  = 1
+  settings[search_info_date]                  = 1
+  settings[search_info_comment]               = 1
+  settings[search_info_upload]                = 1
+  settings[search_info_separator]             = ' - '
+
+  settings[primary_links_tree]                = 0
+  settings[secondary_links_tree]              = 0
+
+  settings[mission_statement_pages]           = 'home'
+
+  settings[taxonomy_settings_enabled]         = 0
+  settings[taxonomy_display_default]          = 'only'
+  settings[taxonomy_format_default]           = 'vocab'
+  settings[taxonomy_delimiter_default]        = ', '
+  settings[taxonomy_enable_content_type]      = 0
+
+  settings[submitted_by_settings_enabled]     = 0
+  settings[submitted_by_author_default]       = 1
+  settings[submitted_by_date_default]         = 1
+  settings[submitted_by_enable_content_type]  = 0
+
+  settings[display_links_settings_enabled]    = 0
+  settings[display_links_default]             = 'all'
+  settings[display_links_enable_content_type] = 0
+
+  settings[rebuild_registry]                  = 0
+  settings[show_theme_info]                   = 0
+
+  settings[cleanup_classes_section]           = 0
+  settings[cleanup_classes_front]             = 0
+  settings[cleanup_classes_user_status]       = 0
+  settings[cleanup_classes_normal_path]       = 0
+  settings[cleanup_classes_node_type]         = 0
+  settings[cleanup_classes_add_edit_delete]   = 0
+  settings[cleanup_classes_language]          = 0
+
+  settings[cleanup_node_id]                = 0
+  settings[cleanup_node_classes_promote]   = 0
+  settings[cleanup_node_classes_sticky]    = 0
+  settings[cleanup_node_classes_teaser]    = 0
+  settings[cleanup_node_classes_preview]   = 0
+  settings[cleanup_node_classes_type]      = 0
+  settings[cleanup_node_classes_language]  = 0
+
+  settings[cleanup_comment_anonymous]         = 0
+  settings[cleanup_comment_node_author]    = 0
+  settings[cleanup_comment_by_viewer]         = 0
+  settings[cleanup_comment_new]               = 0
+  settings[cleanup_comment_zebra]             = 0
+  settings[cleanup_comment_wrapper_type]      = 0
+  
+  settings[cleanup_block_block_module_delta]  = 0
+  settings[cleanup_block_classes_module]      = 0
+  settings[cleanup_block_classes_zebra]       = 0
+  settings[cleanup_block_classes_region]      = 0
+  settings[cleanup_block_classes_count]       = 0
+
+  settings[cleanup_menu_menu_class]           = 1
+  settings[cleanup_menu_leaf_class]           = 1
+  settings[cleanup_menu_first_last_classes]   = 0
+  settings[cleanup_menu_active_classes]       = 0
+  settings[cleanup_menu_title_class]          = 0
+
+  settings[cleanup_links_type_class]          = 1
+  settings[cleanup_links_active_classes]      = 0
+  settings[cleanup_links_first_last_classes]  = 0
+
+  settings[cleanup_item_list_zebra]           = 0
+  settings[cleanup_item_list_first_last]      = 0
+
+  settings[cleanup_views_css_name]            = 0
+  settings[cleanup_views_view_name]           = 0
+  settings[cleanup_views_display_id]          = 0
+  settings[cleanup_views_dom_id]              = 0
+  
+  settings[cleanup_views_unformatted]         = 0
+  settings[cleanup_views_item_list]           = 0
+  
+  settings[cleanup_fields_type]               = 0
+  settings[cleanup_fields_name]               = 0
+  settings[cleanup_fields_zebra]              = 0
+  
+  settings[cleanup_headings_title_class]      = 0
+  settings[cleanup_headings_namespaced_class] = 1
+  
+  settings[links_add_span_elements]           = 0
+
+  settings[block_edit_links]                  = 1
+  settings[gw_admin_hide_help]                = 0
+
+  settings[layout_method]                     = '0'
+  settings[layout_sidebar_first_width]        = '320'
+  settings[layout_sidebar_last_width]         = '240'
+  settings[layout_enable_settings]            = 'on'
+  settings[layout_enable_width]               = 'on'
+  settings[layout_enable_sidebars]            = 'on'
+  settings[layout_enable_method]              = 'on'
+  settings[layout_enable_frontpage]           = 'on'
+
+  settings[equal_heights_sidebars]            = 0
+  settings[equal_heights_blocks]              = 0
+
+version = "6.x-1.0"
+core = "6.x"
+project = "groundwork"
+
