@@ -406,9 +406,7 @@ a {
 
 /* Header region is embedded in the header, on the right side of the logo/site_name */
 #header-region {
-  width: 320px;
-  margin: 10px 0 10px 20px;
-  float: left;
+  float: right;
   clear: none !important;
   display: inline;
 }
@@ -2452,4 +2450,48 @@ ul.primary li a {
 #footer-region #block-views-deltakerliste-block_1 {
     margin: 0 0 0 10px;
     width: 470px;
+}
+
+/**********************************************************
+ *                   Registration and Login Menu
+ **********************************************************/
+ 
+#block-menu-menu-register-login-menu {
+  margin: 25px 0 0;
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+    
+    &.last a {
+      background-position: right top;
+      
+      &:hover {
+        background-position: right bottom;
+      }
+    }
+  }  
+   
+   a {
+     width: 160px;
+     height: 54px;
+     background: transparent url(../images/btn-register.png) left top;
+     overflow: hidden;
+     text-indent: -999999%;
+     display: block;
+  
+   &:hover {
+      background-position: left bottom;
+    }
+    
+    
+  }
 }
