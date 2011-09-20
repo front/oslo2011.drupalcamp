@@ -991,20 +991,20 @@ ul.pager li.pager-last {
 
 #footer a:link,
 #footer a:visited {
-  color: #ffffff;
+  //color: #ffffff;
 }
 
 #footer a:hover {
-  color: #00ff00;
+  //color: #00ff00;
 }
 
 #footer a:focus {
-  color: #ffcc33;
+  //color: #ffcc33;
 }
 
 #footer a:active,
 #footer a.active {
-  color: #999999;
+  //color: #999999;
 }
 
 #footer-region {
@@ -2446,10 +2446,81 @@ ul.primary li a {
 
 #footer-region #block-block-6 {
     margin: 0 10px 0 0;
-    width: 470px;
+    //width: 470px;
 }
 
 #footer-region #block-views-deltakerliste-block_1 {
     margin: 0 0 0 10px;
-    width: 470px;
+    //width: 470px;
 }
+
+
+ 
+/**********************
+*  Twitter block
+************************/
+#footer {
+	background: $footer-bg-color url('../images/bg-footer.png') repeat-x;
+	@include border-radius( 10px 10px 0 0);
+		
+	#footer-region {
+	
+		ul { list-style-type: none;}
+		h2 { 
+			margin-top: 12px;
+			color: black;
+			text-align: center;
+			font-family: 'Myriad Pro', "Arial";
+			font-size: 1.3em;
+			text-transform: uppercase;
+		}
+		li{
+			color: $footer-text-color;
+			font-size: $footer-text-size;
+			margin-top: 1em;
+			font-family: $footer-font-family;
+		}
+	
+		.forum-block{
+			//background: $footer-bg-color url('../images/bg-footer.png') repeat-x;
+			//@include border-radius( 10px 10px 0 0);
+		}
+		.last-comments-block{
+			//background: $footer-bg-color url('../images/bg-footer.png') repeat-x;	
+		}
+		.twitter-block {
+			//background: $footer-bg-color url('../images/bg-footer.png') repeat-x;
+			//@include border-radius( 10px 10px 0 0);
+			.block-inner{
+				background-color: transparent;	
+				.block-content{
+					background-color:transparent;
+				}
+			}
+			.tweets-pulled-listing {
+				.tweet-text {
+					font-family: $footer-font-family;
+					color: $footer-text-color; 
+					font-size:$footer-text-size;
+					a:link{
+						color: $footer-link-color !important
+					}
+				}
+				.tweet-author {
+					a:link{
+						color: $footer-link-color !important;
+					}
+				}
+				.tweet-time {
+					display: none;
+					color: $footer-text-color !important;
+			}
+		}	
+	}
+}
+
+
+
+}
+/*
+*/

@@ -1,5 +1,6 @@
 /* Compass import */
 /* Colors */
+/* Fonts */
 /**
  * $Id$
  * perceptivity.eu
@@ -645,28 +646,6 @@ h1#page-title {
 /* line 985, sass/style.scss */
 #footer {
   padding: 20px 0;
-}
-
-/* line 993, sass/style.scss */
-#footer a:link,
-#footer a:visited {
-  color: #ffffff;
-}
-
-/* line 997, sass/style.scss */
-#footer a:hover {
-  color: #00ff00;
-}
-
-/* line 1001, sass/style.scss */
-#footer a:focus {
-  color: #ffcc33;
-}
-
-/* line 1006, sass/style.scss */
-#footer a:active,
-#footer a.active {
-  color: #999999;
 }
 
 /* line 1022, sass/style.scss */
@@ -1674,11 +1653,73 @@ ul.primary li a {
 /* line 2447, sass/style.scss */
 #footer-region #block-block-6 {
   margin: 0 10px 0 0;
-  width: 470px;
 }
 
 /* line 2452, sass/style.scss */
 #footer-region #block-views-deltakerliste-block_1 {
   margin: 0 0 0 10px;
-  width: 470px;
 }
+
+/**********************
+*  Twitter block
+************************/
+/* line 2462, sass/style.scss */
+#footer {
+  background: #ededf0 url("../images/bg-footer.png") repeat-x;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -khtml-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+/* line 2468, sass/style.scss */
+#footer #footer-region ul {
+  list-style-type: none;
+}
+/* line 2469, sass/style.scss */
+#footer #footer-region h2 {
+  margin-top: 12px;
+  color: black;
+  text-align: center;
+  font-family: 'Myriad Pro', "Arial";
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+/* line 2477, sass/style.scss */
+#footer #footer-region li {
+  color: #0c285f;
+  font-size: 1em;
+  margin-top: 1em;
+  font-family: "Lucida Grande", "Verdana";
+}
+/* line 2494, sass/style.scss */
+#footer #footer-region .twitter-block .block-inner {
+  background-color: transparent;
+}
+/* line 2496, sass/style.scss */
+#footer #footer-region .twitter-block .block-inner .block-content {
+  background-color: transparent;
+}
+/* line 2501, sass/style.scss */
+#footer #footer-region .twitter-block .tweets-pulled-listing .tweet-text {
+  font-family: "Lucida Grande", "Verdana";
+  color: #0c285f;
+  font-size: 1em;
+}
+/* line 2505, sass/style.scss */
+#footer #footer-region .twitter-block .tweets-pulled-listing .tweet-text a:link {
+  color: #1545a3 !important;
+}
+/* line 2510, sass/style.scss */
+#footer #footer-region .twitter-block .tweets-pulled-listing .tweet-author a:link {
+  color: #1545a3 !important;
+}
+/* line 2514, sass/style.scss */
+#footer #footer-region .twitter-block .tweets-pulled-listing .tweet-time {
+  display: none;
+  color: #0c285f !important;
+}
+
+/*
+*/
