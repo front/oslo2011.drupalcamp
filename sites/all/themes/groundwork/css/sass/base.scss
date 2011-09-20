@@ -4,6 +4,7 @@
 /* 960 Grid */
 #page {
   @include grid-container;
+  background: #F9F9F9 url(../images/bg-light.png) no-repeat center top;
 }
 
 #primary-menu-elements, 
