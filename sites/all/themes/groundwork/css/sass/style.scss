@@ -2471,27 +2471,30 @@ ul.primary li a {
     list-style: none;
     list-style-image: none;
     
+    &.first a {
+      width: 160px;
+      height: 54px;
+      background: transparent url(../images/btn-register.png) left top;
+      overflow: hidden;
+      text-indent: -999999%;
+      display: block;
+  
+      &:hover {
+       background-position: left bottom;
+      }
+    }  
+    
     &.last a {
-      background-position: right top;
-      
+      width: 160px;
+      height: 54px;
+      background: transparent url(../images/btn-register.png) right top;
+      overflow: hidden;
+      text-indent: -999999%;
+      display: block;
+
       &:hover {
         background-position: right bottom;
-      }
+      }  
     }
-  }  
-   
-   a {
-     width: 160px;
-     height: 54px;
-     background: transparent url(../images/btn-register.png) left top;
-     overflow: hidden;
-     text-indent: -999999%;
-     display: block;
-  
-   &:hover {
-      background-position: left bottom;
-    }
-    
-    
   }
 }

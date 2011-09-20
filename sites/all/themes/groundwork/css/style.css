@@ -1703,15 +1703,7 @@ ul.primary li a {
   list-style-image: none;
 }
 /* line 2474, sass/style.scss */
-#block-menu-menu-register-login-menu li.last a {
-  background-position: right top;
-}
-/* line 2477, sass/style.scss */
-#block-menu-menu-register-login-menu li.last a:hover {
-  background-position: right bottom;
-}
-/* line 2483, sass/style.scss */
-#block-menu-menu-register-login-menu a {
+#block-menu-menu-register-login-menu li.first a {
   width: 160px;
   height: 54px;
   background: transparent url(../images/btn-register.png) left top;
@@ -1719,7 +1711,20 @@ ul.primary li a {
   text-indent: -999999%;
   display: block;
 }
-/* line 2491, sass/style.scss */
-#block-menu-menu-register-login-menu a:hover {
+/* line 2482, sass/style.scss */
+#block-menu-menu-register-login-menu li.first a:hover {
   background-position: left bottom;
+}
+/* line 2487, sass/style.scss */
+#block-menu-menu-register-login-menu li.last a {
+  width: 160px;
+  height: 54px;
+  background: transparent url(../images/btn-register.png) right top;
+  overflow: hidden;
+  text-indent: -999999%;
+  display: block;
+}
+/* line 2495, sass/style.scss */
+#block-menu-menu-register-login-menu li.last a:hover {
+  background-position: right bottom;
 }
