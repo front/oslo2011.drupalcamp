@@ -2577,9 +2577,9 @@ ul.primary li a {
   
   .views-slideshow-controls-top {
     position: absolute;
-    top: 100px;
+    top: 160px;
     left: -45px;
-    width: 1000px;
+    width: 1030px;
     
     a {
       background: transparent url(../images/slideshow-arrow.png) no-repeat right top;
@@ -2588,6 +2588,7 @@ ul.primary li a {
       overflow: hidden;
       text-indent: -99999%;
       display: block;
+      float: left;
       
       &:hover {
         background-position: right bottom;

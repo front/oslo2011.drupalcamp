@@ -1784,9 +1784,9 @@ ul.primary li a {
 /* line 2578, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top {
   position: absolute;
-  top: 100px;
+  top: 160px;
   left: -45px;
-  width: 1000px;
+  width: 1030px;
 }
 /* line 2584, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a {
@@ -1796,21 +1796,22 @@ ul.primary li a {
   overflow: hidden;
   text-indent: -99999%;
   display: block;
+  float: left;
 }
-/* line 2592, sass/style.scss */
+/* line 2593, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a:hover {
   background-position: right bottom;
 }
-/* line 2596, sass/style.scss */
+/* line 2597, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_next_frontpage_banner-block_1 {
   background-position: left top;
   float: right;
 }
-/* line 2600, sass/style.scss */
+/* line 2601, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_next_frontpage_banner-block_1:hover {
   background-position: left bottom;
 }
-/* line 2605, sass/style.scss */
+/* line 2606, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_playpause_frontpage_banner-block_1 {
   display: none;
 }
