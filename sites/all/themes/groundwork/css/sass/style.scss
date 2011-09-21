@@ -10,6 +10,8 @@
  * style.css is the file to use when building your theme. 
  * Make a copy first as a backup.
  */
+ 
+
 /**********************************************************
  *                    HTML & Body
  **********************************************************/
@@ -2649,10 +2651,14 @@ ul.primary li a {
 .sponsor-block {
   border: 1px solid #CECECE;
   background: #D3D3D4 url(../images/bg-sponsor-platinum.png) no-repeat left top;
-  padding: 10px;
+  padding: 10px 10px 0;
   
   .block-content-inner {
     padding: 0;
+    
+    div.sponsor {
+      margin-bottom: 10px;
+    }
   }
   
   .block-title {
@@ -2671,5 +2677,15 @@ ul.primary li a {
     background-color: #E0E0E0;
     border-color: #B8B8B8;
     background-image: url(../images/bg-sponsor-silver.png);
+    
+    .odd, .even {
+      float: left;
+      margin-right: 8px;
+    }
+    
+    .even {
+      margin-right: 0;
+    }
   }
+  
 }
