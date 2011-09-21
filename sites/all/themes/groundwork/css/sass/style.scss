@@ -2581,6 +2581,10 @@ ul.primary li a {
 
 #block-views-deltakerliste-block_1 {
   
+  .block-content-inner {
+    padding-left: 0px;
+  }
+  
    td {
      vertical-align: text-top;
      }
@@ -2588,6 +2592,7 @@ ul.primary li a {
   .block-title {
     @include block-title;
     margin-bottom: -10px;
+    width: 305px;
   }
 
   .value{
