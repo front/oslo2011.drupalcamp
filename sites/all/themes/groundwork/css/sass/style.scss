@@ -245,6 +245,11 @@ a {
   @include border-radius(0 0 10px 10px);
   height: 50px;
   
+  li {
+    display: inline;
+    margin: 0 3px;
+  }
+  
 }
 
 #main-elements {

@@ -22,10 +22,13 @@ $participants-font-size: 0.8em;
 @mixin block-title {
   margin-top: 12px;
 	color: black;
-	text-align: center;
+	text-align: left;
 	font-family: 'Myriad Pro', "Arial";
 	font-size: 1.3em;
 	text-transform: uppercase;
+	border-bottom-style: solid;
+	border-width:1px;
+	border-color: #CCCCCC;
 }
 
 
