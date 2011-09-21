@@ -1,6 +1,7 @@
 /* Compass import */
 /* Colors */
 /* Fonts */
+/* Mixins */
 /**
  * $Id$
  * perceptivity.eu
@@ -1659,7 +1660,7 @@ ul.primary li a {
 }
 
 /**********************
-*  Twitter block
+*        Footer
 ************************/
 /* line 2460, sass/style.scss */
 #footer {
@@ -1675,7 +1676,7 @@ ul.primary li a {
 #footer #footer-region ul {
   list-style-type: none;
 }
-/* line 2467, sass/style.scss */
+/* line 2468, sass/style.scss */
 #footer #footer-region h2 {
   margin-top: 12px;
   color: black;
@@ -1684,54 +1685,59 @@ ul.primary li a {
   font-size: 1.3em;
   text-transform: uppercase;
 }
-/* line 2475, sass/style.scss */
+/* line 2470, sass/style.scss */
 #footer #footer-region li {
   color: #0c285f;
   font-size: 1em;
   margin-top: 1em;
   font-family: "Lucida Grande", "Verdana";
 }
-/* line 2493, sass/style.scss */
+/* line 2479, sass/style.scss */
 #footer #footer-region .twitter-block .block-inner {
   background-color: transparent;
 }
-/* line 2496, sass/style.scss */
+/* line 2482, sass/style.scss */
 #footer #footer-region .twitter-block .block-inner .block-content {
   background-color: transparent;
 }
-/* line 2500, sass/style.scss */
+/* line 2486, sass/style.scss */
 #footer #footer-region .twitter-block .tweets-pulled-listing .tweet-text {
   font-family: "Lucida Grande", "Verdana";
   color: #0c285f;
   font-size: 1em;
 }
-/* line 2504, sass/style.scss */
+/* line 2490, sass/style.scss */
 #footer #footer-region .twitter-block .tweets-pulled-listing .tweet-text a:link {
   color: #1545a3 !important;
 }
-/* line 2506, sass/style.scss */
+/* line 2493, sass/style.scss */
 #footer #footer-region .twitter-block .tweets-pulled-listing .tweet-author a:link {
   color: #1545a3 !important;
 }
-/* line 2507, sass/style.scss */
+/* line 2494, sass/style.scss */
 #footer #footer-region .twitter-block .tweets-pulled-listing .tweet-time {
   display: none;
   color: #0c285f !important;
+}
+/* line 2502, sass/style.scss */
+#footer #attribution {
+  text-align: center;
+  color: #0c285f;
 }
 
 /**********************************************************
  *                   Registration and Login Menu
  **********************************************************/
-/* line 2520, sass/style.scss */
+/* line 2512, sass/style.scss */
 #block-menu-menu-register-login-menu {
   margin: 25px 0 0;
 }
-/* line 2523, sass/style.scss */
+/* line 2515, sass/style.scss */
 #block-menu-menu-register-login-menu ul {
   padding: 0;
   list-style: none;
 }
-/* line 2528, sass/style.scss */
+/* line 2520, sass/style.scss */
 #block-menu-menu-register-login-menu li {
   float: left;
   margin: 0;
@@ -1739,7 +1745,7 @@ ul.primary li a {
   list-style: none;
   list-style-image: none;
 }
-/* line 2535, sass/style.scss */
+/* line 2527, sass/style.scss */
 #block-menu-menu-register-login-menu li.first a {
   width: 160px;
   height: 54px;
@@ -1748,11 +1754,11 @@ ul.primary li a {
   text-indent: -999999%;
   display: block;
 }
-/* line 2543, sass/style.scss */
+/* line 2535, sass/style.scss */
 #block-menu-menu-register-login-menu li.first a:hover {
   background-position: left bottom;
 }
-/* line 2548, sass/style.scss */
+/* line 2540, sass/style.scss */
 #block-menu-menu-register-login-menu li.last a {
   width: 160px;
   height: 54px;
@@ -1761,7 +1767,45 @@ ul.primary li a {
   text-indent: -999999%;
   display: block;
 }
-/* line 2556, sass/style.scss */
+/* line 2548, sass/style.scss */
 #block-menu-menu-register-login-menu li.last a:hover {
   background-position: right bottom;
+}
+
+/************************************
+*             Participants
+*************************************/
+/* line 2563, sass/style.scss */
+#block-views-deltakerliste-block_1 td {
+  vertical-align: text-top;
+}
+/* line 2567, sass/style.scss */
+#block-views-deltakerliste-block_1 .block-title {
+  margin-top: 12px;
+  color: black;
+  text-align: center;
+  font-family: 'Myriad Pro', "Arial";
+  font-size: 1.3em;
+  text-transform: uppercase;
+  margin-bottom: -10px;
+}
+/* line 2572, sass/style.scss */
+#block-views-deltakerliste-block_1 .value {
+  color: #333333;
+  font-family: 'Lucida Grande','Verdana';
+  font-size: 0.8em;
+  padding-top: 5px;
+}
+/* line 2576, sass/style.scss */
+#block-views-deltakerliste-block_1 .imagecache-user_image_avatar {
+  border-style: outset;
+  border-color: #FFF;
+  border-width: 1px;
+}
+/* line 2581, sass/style.scss */
+#block-views-deltakerliste-block_1 .more-link a, #block-views-deltakerliste-block_1 .more-link a:visited {
+  color: #0C285F;
+  font-family: 'Lucida Grande','Verdana';
+  font-size: 0.8em;
+  margin-right: -20px;
 }

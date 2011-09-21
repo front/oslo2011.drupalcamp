@@ -2455,7 +2455,7 @@ ul.primary li a {
 
  
 /**********************
-*  Twitter block
+*        Footer
 ************************/
 #footer {
 	background: $footer-bg-color url('../images/bg-footer.png') repeat-x;
@@ -2464,14 +2464,9 @@ ul.primary li a {
 	#footer-region {
 	
 		ul { list-style-type: none;}
-		h2 { 
-			margin-top: 12px;
-			color: black;
-			text-align: center;
-			font-family: 'Myriad Pro', "Arial";
-			font-size: 1.3em;
-			text-transform: uppercase;
-		}
+
+		h2 { @include block-title; }
+
 		li{
 			color: $footer-text-color;
 			font-size: $footer-text-size;
@@ -2479,17 +2474,8 @@ ul.primary li a {
 			font-family: $footer-font-family;
 		}
 	
-		.forum-block{
-			//background: $footer-bg-color url('../images/bg-footer.png') repeat-x;
-			//@include border-radius( 10px 10px 0 0);
-		}
-		.last-comments-block{
-			//background: $footer-bg-color url('../images/bg-footer.png') repeat-x;	
-		}
 		.twitter-block {
-			//background: $footer-bg-color url('../images/bg-footer.png') repeat-x;
-			//@include border-radius( 10px 10px 0 0);
-        
+
       .block-inner {
         background-color: transparent;	
 				    
@@ -2503,6 +2489,7 @@ ul.primary li a {
 					font-size:$footer-text-size;
 					a:link{color: $footer-link-color !important}
         }
+
 				.tweet-author a:link{color: $footer-link-color !important;}    
         .tweet-time {
           display: none;
@@ -2510,6 +2497,11 @@ ul.primary li a {
 			  }
       }	
     }
+  }
+
+  #attribution { 
+    text-align: center;
+    color: $footer-text-color;
   }
 }
 
@@ -2559,3 +2551,36 @@ ul.primary li a {
     }
   }
 }
+
+
+/************************************
+*             Participants
+*************************************/
+
+
+#block-views-deltakerliste-block_1 {
+  
+   td {
+     vertical-align: text-top;
+     }
+  
+  .block-title {
+    @include block-title;
+    margin-bottom: -10px;
+  }
+
+  .value{
+    @include block-text;
+    padding-top: 5px;
+  }
+  .imagecache-user_image_avatar{
+    border-style: outset;
+    border-color: #FFF;
+    border-width: 1px;
+  }
+  .more-link a, .more-link a:visited{
+    @include block-link;
+    margin-right: -20px;
+  }
+}
+
