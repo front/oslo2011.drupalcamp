@@ -6,8 +6,38 @@ $main-link-color-lighten: lighten($main-link-color, 10%);
 $bg-color: #F9F9F9;
 $footer-text-color: #0C285F;
 $footer-bg-color: #EDEDF0;
+$participants-font-color: #333333;
 
 /* Fonts */
 $footer-text-size: 1em;
 $footer-font-family: 'Lucida Grande','Verdana';
 $footer-link-color: lighten($footer-text-color, 15%);
+$participants-font-family: 'Lucida Grande', 'Verdana';
+$participants-font-size: 0.8em;
+
+
+
+/* Mixins */
+
+@mixin block-title {
+  margin-top: 12px;
+	color: black;
+	text-align: center;
+	font-family: 'Myriad Pro', "Arial";
+	font-size: 1.3em;
+	text-transform: uppercase;
+}
+
+
+
+@mixin block-text {
+  color: #333333;
+  font-family: 'Lucida Grande','Verdana';
+  font-size:  0.8em;
+}
+
+@mixin block-link {
+  color: #0C285F;
+  font-family: 'Lucida Grande','Verdana';
+  font-size:  0.8em;
+}

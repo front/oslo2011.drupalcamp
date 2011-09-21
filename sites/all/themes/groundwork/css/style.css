@@ -1,6 +1,7 @@
 /* Compass import */
 /* Colors */
 /* Fonts */
+/* Mixins */
 /**
  * $Id$
  * perceptivity.eu
@@ -1664,7 +1665,7 @@ ul.primary li a {
 }
 
 /**********************
-*  Twitter block
+*        Footer
 ************************/
 /* line 2470, sass/style.scss */
 #footer {
@@ -1680,7 +1681,7 @@ ul.primary li a {
 #footer #footer-region ul {
   list-style-type: none;
 }
-/* line 2477, sass/style.scss */
+/* line 2478, sass/style.scss */
 #footer #footer-region h2 {
   margin-top: 12px;
   color: black;
@@ -1689,54 +1690,59 @@ ul.primary li a {
   font-size: 1.3em;
   text-transform: uppercase;
 }
-/* line 2485, sass/style.scss */
+/* line 2480, sass/style.scss */
 #footer #footer-region li {
   color: #0c285f;
   font-size: 1em;
   margin-top: 1em;
   font-family: "Lucida Grande", "Verdana";
 }
-/* line 2503, sass/style.scss */
+/* line 2489, sass/style.scss */
 #footer #footer-region .twitter-block .block-inner {
   background-color: transparent;
 }
-/* line 2506, sass/style.scss */
+/* line 2492, sass/style.scss */
 #footer #footer-region .twitter-block .block-inner .block-content {
   background-color: transparent;
 }
-/* line 2510, sass/style.scss */
+/* line 2496, sass/style.scss */
 #footer #footer-region .twitter-block .tweets-pulled-listing .tweet-text {
   font-family: "Lucida Grande", "Verdana";
   color: #0c285f;
   font-size: 1em;
 }
-/* line 2514, sass/style.scss */
+/* line 2500, sass/style.scss */
 #footer #footer-region .twitter-block .tweets-pulled-listing .tweet-text a:link {
   color: #1545a3 !important;
 }
-/* line 2516, sass/style.scss */
+/* line 2503, sass/style.scss */
 #footer #footer-region .twitter-block .tweets-pulled-listing .tweet-author a:link {
   color: #1545a3 !important;
 }
-/* line 2517, sass/style.scss */
+/* line 2504, sass/style.scss */
 #footer #footer-region .twitter-block .tweets-pulled-listing .tweet-time {
   display: none;
   color: #0c285f !important;
+}
+/* line 2512, sass/style.scss */
+#footer #attribution {
+  text-align: center;
+  color: #0c285f;
 }
 
 /**********************************************************
  *                   Registration and Login Menu
  **********************************************************/
-/* line 2530, sass/style.scss */
+/* line 2522, sass/style.scss */
 #block-menu-menu-register-login-menu {
   margin: 25px 0 0;
 }
-/* line 2533, sass/style.scss */
+/* line 2525, sass/style.scss */
 #block-menu-menu-register-login-menu ul {
   padding: 0;
   list-style: none;
 }
-/* line 2538, sass/style.scss */
+/* line 2530, sass/style.scss */
 #block-menu-menu-register-login-menu li {
   float: left;
   margin: 0;
@@ -1744,7 +1750,7 @@ ul.primary li a {
   list-style: none;
   list-style-image: none;
 }
-/* line 2545, sass/style.scss */
+/* line 2537, sass/style.scss */
 #block-menu-menu-register-login-menu li.first a {
   width: 160px;
   height: 54px;
@@ -1753,11 +1759,11 @@ ul.primary li a {
   text-indent: -999999%;
   display: block;
 }
-/* line 2553, sass/style.scss */
+/* line 2545, sass/style.scss */
 #block-menu-menu-register-login-menu li.first a:hover {
   background-position: left bottom;
 }
-/* line 2558, sass/style.scss */
+/* line 2550, sass/style.scss */
 #block-menu-menu-register-login-menu li.last a {
   width: 160px;
   height: 54px;
@@ -1766,34 +1772,72 @@ ul.primary li a {
   text-indent: -999999%;
   display: block;
 }
-/* line 2566, sass/style.scss */
+/* line 2558, sass/style.scss */
 #block-menu-menu-register-login-menu li.last a:hover {
   background-position: right bottom;
+}
+
+/************************************
+*             Participants
+*************************************/
+/* line 2573, sass/style.scss */
+#block-views-deltakerliste-block_1 td {
+  vertical-align: text-top;
+}
+/* line 2577, sass/style.scss */
+#block-views-deltakerliste-block_1 .block-title {
+  margin-top: 12px;
+  color: black;
+  text-align: center;
+  font-family: 'Myriad Pro', "Arial";
+  font-size: 1.3em;
+  text-transform: uppercase;
+  margin-bottom: -10px;
+}
+/* line 2582, sass/style.scss */
+#block-views-deltakerliste-block_1 .value {
+  color: #333333;
+  font-family: 'Lucida Grande','Verdana';
+  font-size: 0.8em;
+  padding-top: 5px;
+}
+/* line 2586, sass/style.scss */
+#block-views-deltakerliste-block_1 .imagecache-user_image_avatar {
+  border-style: outset;
+  border-color: #FFF;
+  border-width: 1px;
+}
+/* line 2591, sass/style.scss */
+#block-views-deltakerliste-block_1 .more-link a, #block-views-deltakerliste-block_1 .more-link a:visited {
+  color: #0C285F;
+  font-family: 'Lucida Grande','Verdana';
+  font-size: 0.8em;
+  margin-right: -20px;
 }
 
 /**********************************************************
  *                   Banner slideshow
  **********************************************************/
-/* line 2577, sass/style.scss */
+/* line 2600, sass/style.scss */
 #block-views-frontpage_banner-block_1 {
   margin: 0;
 }
-/* line 2580, sass/style.scss */
+/* line 2603, sass/style.scss */
 #block-views-frontpage_banner-block_1 .block-content-inner {
   padding: 0;
 }
-/* line 2584, sass/style.scss */
+/* line 2607, sass/style.scss */
 #block-views-frontpage_banner-block_1 img {
   border: 1px solid #D2D3D2;
 }
-/* line 2588, sass/style.scss */
+/* line 2611, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top {
   position: absolute;
   top: 160px;
   left: -45px;
   width: 1030px;
 }
-/* line 2594, sass/style.scss */
+/* line 2617, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a {
   background: transparent url(../images/slideshow-arrow.png) no-repeat right top;
   height: 36px;
@@ -1803,20 +1847,20 @@ ul.primary li a {
   display: block;
   float: left;
 }
-/* line 2603, sass/style.scss */
+/* line 2626, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a:hover {
   background-position: right bottom;
 }
-/* line 2607, sass/style.scss */
+/* line 2630, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_next_frontpage_banner-block_1 {
   background-position: left top;
   float: right;
 }
-/* line 2611, sass/style.scss */
+/* line 2634, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_next_frontpage_banner-block_1:hover {
   background-position: left bottom;
 }
-/* line 2616, sass/style.scss */
+/* line 2639, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_playpause_frontpage_banner-block_1 {
   display: none;
 }
