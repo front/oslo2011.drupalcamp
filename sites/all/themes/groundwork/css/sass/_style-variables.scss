@@ -32,12 +32,15 @@ $participants-font-size: 0.8em;
 
 @mixin block-text {
   color: #333333;
-  font-family: 'Lucida Grande','Verdana';
   font-size:  0.8em;
 }
 
 @mixin block-link {
   color: #0C285F;
-  font-family: 'Lucida Grande','Verdana';
   font-size:  0.8em;
+}
+
+@mixin footer-text{
+	font-size: 1em;
+	color: #0C285F;
 }

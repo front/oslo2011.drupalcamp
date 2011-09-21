@@ -161,6 +161,7 @@ var {
 a {
   color: $main-link-color;
   text-decoration: none;
+  font-weight: normal;
 
   &:link,
   &:visited {
@@ -2469,22 +2470,25 @@ ul.primary li a {
 /**********************
 *        Footer
 ************************/
+
+
+
 #footer {
 	background: $footer-bg-color url('../images/bg-footer.png') repeat-x;
 	@include border-radius( 10px 10px 0 0);
 		
 	#footer-region {
 	
-		ul { list-style-type: none;}
+		ul, li { list-style-type: none;}
 
 		h2 { @include block-title; }
 
-		li{
-			color: $footer-text-color;
-			font-size: $footer-text-size;
+		li {
+			list-style-type:none;
 			margin-top: 1em;
-			font-family: $footer-font-family;
+			font-weight: normal;		
 		}
+		
 	
 		.twitter-block {
 
