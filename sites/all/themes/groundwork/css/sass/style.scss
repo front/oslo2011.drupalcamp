@@ -53,6 +53,7 @@ h1 {
 
 h2 {
   color: #000000;
+  margin-bottom: 0.2em;
 }
 
 h3 {
@@ -156,27 +157,24 @@ var {
  *                 Global Link Styles
  **********************************************************/
 a {
-  color: #004276;
-  font-weight: 500;
+  color: $main-link-color;
   text-decoration: none;
 
   &:link,
   &:visited {
-    color: #004276;
+    color: $main-link-color;
   }
   
   &:hover {
-    color: #006600;
-    text-decoration: underline;
+    color: $main-link-color-lighten;
   }
 
   &:focus {
-      color: #cc9900;
-      text-decoration: underline;
+      color: $main-link-color-lighten;
   }
 
   &:active {
-    color: #990000;
+    color: $main-link-color;
   }
 }
 /**********************************************************
@@ -892,9 +890,8 @@ span.search-info-upload {
  *                      Breadcrumb
  **********************************************************/
 #breadcrumb {
-  margin: 0 0 10px 10px;
-  padding: 5px 10px;
-  background: #e8f0f7;
+  padding: 0;
+  margin: 0 0 10px;
   font: italic 0.833em Georgia, "Times New Roman", Times, serif;
 }
 
@@ -929,7 +926,6 @@ span.search-info-upload {
  **********************************************************/
 h1#page-title {
   color: #000000;
-  font-family: Georgia,"Times New Roman",Times,serif;
 }
 
 /**********************************************************
@@ -1080,7 +1076,6 @@ ul.links li a {
 .node-title {
   clear: both;
   padding-top: 10px;
-  font: 1.833em Georgia,"Times New Roman",Times,serif;
   color: #333333;
 }
 
@@ -1091,7 +1086,6 @@ ul.links li a {
 }
 
 .node-title a:hover,.node-title a:focus {
-  text-decoration: underline;
 }
 
 .node-title a:link,
@@ -1133,11 +1127,7 @@ ul.links li a {
 
 /* Common links classes. */
 .node ul.links {
-  border-top: 10px dotted #75add6;
-  clear: both;
-  float: right;
-  margin: 20px 10px;
-  padding: 4px 0 4px 8px;
+  font-size: 0.85em;
 }
 
 .node ul.links li {
@@ -1517,6 +1507,10 @@ ul.links li.comment_delete a {
   z-index: 0;
 }
 
+#sidebar-last .block {
+  margin-right: 0;
+}
+
 .white .block-inner {
   background: #ffffff;
 }
@@ -1588,7 +1582,6 @@ ul.links li.comment_delete a {
   padding-left: 5px;
   margin-bottom: 5px;
   color: #000000;
-  font: 1.5em Georgia,"Times New Roman",Times,serif;
 }
 
 /* Block Title font colors if block has light background */
@@ -2246,6 +2239,24 @@ ul.menu li.last {
 }
 
 /**********************************************************
+ *                   Views list
+ **********************************************************/
+#main-content .view-content {
+  
+  div.odd, div.even {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+  }
+  
+  div.last {
+    margin: 0;
+    padding: 0;
+    border-bottom: 0;
+  }  
+}
+
+/**********************************************************
  *                 Groundwork Button Wrappers
  **********************************************************/
 /**
@@ -2393,7 +2404,6 @@ img.float-left,
   clear: both;
   margin: 0;
   color: #000000;
-  font-family: Georgia,"Times New Roman",Times,serif;
 }
 
 ul.primary li a {
@@ -2581,6 +2591,55 @@ ul.primary li a {
   .more-link a, .more-link a:visited{
     @include block-link;
     margin-right: -20px;
+  }
+}
+/**********************************************************
+ *                   Banner slideshow
+ **********************************************************/
+ 
+#block-views-frontpage_banner-block_1 {
+  margin: 0;
+  
+  .block-content-inner {
+    padding: 0;
+  }
+  
+  img {
+    border: 1px solid #D2D3D2;
+  }
+  
+  .views-slideshow-controls-top {
+    position: absolute;
+    top: 160px;
+    left: -45px;
+    width: 1030px;
+    
+    a {
+      background: transparent url(../images/slideshow-arrow.png) no-repeat right top;
+      height: 36px;
+      width: 25px;
+      overflow: hidden;
+      text-indent: -99999%;
+      display: block;
+      float: left;
+      
+      &:hover {
+        background-position: right bottom;
+      }
+      
+      &#views_slideshow_singleframe_next_frontpage_banner-block_1 {
+        background-position: left top;
+        float: right;
+       
+       &:hover {
+         background-position: left bottom;
+       }      
+      }
+      
+      &#views_slideshow_singleframe_playpause_frontpage_banner-block_1 {
+        display: none;
+      }
+    }
   }
 }
 
