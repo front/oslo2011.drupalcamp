@@ -646,28 +646,6 @@ h1#page-title {
   padding: 20px 0;
 }
 
-/* line 991, sass/style.scss */
-#footer a:link,
-#footer a:visited {
-  color: #ffffff;
-}
-
-/* line 995, sass/style.scss */
-#footer a:hover {
-  color: #00ff00;
-}
-
-/* line 999, sass/style.scss */
-#footer a:focus {
-  color: #ffcc33;
-}
-
-/* line 1004, sass/style.scss */
-#footer a:active,
-#footer a.active {
-  color: #999999;
-}
-
 /* line 1020, sass/style.scss */
 #attribution {
   clear: both;
@@ -1673,28 +1651,87 @@ ul.primary li a {
 /* line 2445, sass/style.scss */
 #footer-region #block-block-6 {
   margin: 0 10px 0 0;
-  width: 470px;
 }
 
 /* line 2450, sass/style.scss */
 #footer-region #block-views-deltakerliste-block_1 {
   margin: 0 0 0 10px;
-  width: 470px;
+}
+
+/**********************
+*  Twitter block
+************************/
+/* line 2460, sass/style.scss */
+#footer {
+  background: #ededf0 url("../images/bg-footer.png") repeat-x;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -khtml-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+/* line 2466, sass/style.scss */
+#footer #footer-region ul {
+  list-style-type: none;
+}
+/* line 2467, sass/style.scss */
+#footer #footer-region h2 {
+  margin-top: 12px;
+  color: black;
+  text-align: center;
+  font-family: 'Myriad Pro', "Arial";
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+/* line 2475, sass/style.scss */
+#footer #footer-region li {
+  color: #0c285f;
+  font-size: 1em;
+  margin-top: 1em;
+  font-family: "Lucida Grande", "Verdana";
+}
+/* line 2493, sass/style.scss */
+#footer #footer-region .twitter-block .block-inner {
+  background-color: transparent;
+}
+/* line 2496, sass/style.scss */
+#footer #footer-region .twitter-block .block-inner .block-content {
+  background-color: transparent;
+}
+/* line 2500, sass/style.scss */
+#footer #footer-region .twitter-block .tweets-pulled-listing .tweet-text {
+  font-family: "Lucida Grande", "Verdana";
+  color: #0c285f;
+  font-size: 1em;
+}
+/* line 2504, sass/style.scss */
+#footer #footer-region .twitter-block .tweets-pulled-listing .tweet-text a:link {
+  color: #1545a3 !important;
+}
+/* line 2506, sass/style.scss */
+#footer #footer-region .twitter-block .tweets-pulled-listing .tweet-author a:link {
+  color: #1545a3 !important;
+}
+/* line 2507, sass/style.scss */
+#footer #footer-region .twitter-block .tweets-pulled-listing .tweet-time {
+  display: none;
+  color: #0c285f !important;
 }
 
 /**********************************************************
  *                   Registration and Login Menu
  **********************************************************/
-/* line 2459, sass/style.scss */
+/* line 2520, sass/style.scss */
 #block-menu-menu-register-login-menu {
   margin: 25px 0 0;
 }
-/* line 2462, sass/style.scss */
+/* line 2523, sass/style.scss */
 #block-menu-menu-register-login-menu ul {
   padding: 0;
   list-style: none;
 }
-/* line 2467, sass/style.scss */
+/* line 2528, sass/style.scss */
 #block-menu-menu-register-login-menu li {
   float: left;
   margin: 0;
@@ -1702,7 +1739,7 @@ ul.primary li a {
   list-style: none;
   list-style-image: none;
 }
-/* line 2474, sass/style.scss */
+/* line 2535, sass/style.scss */
 #block-menu-menu-register-login-menu li.first a {
   width: 160px;
   height: 54px;
@@ -1711,11 +1748,11 @@ ul.primary li a {
   text-indent: -999999%;
   display: block;
 }
-/* line 2482, sass/style.scss */
+/* line 2543, sass/style.scss */
 #block-menu-menu-register-login-menu li.first a:hover {
   background-position: left bottom;
 }
-/* line 2487, sass/style.scss */
+/* line 2548, sass/style.scss */
 #block-menu-menu-register-login-menu li.last a {
   width: 160px;
   height: 54px;
@@ -1724,7 +1761,7 @@ ul.primary li a {
   text-indent: -999999%;
   display: block;
 }
-/* line 2495, sass/style.scss */
+/* line 2556, sass/style.scss */
 #block-menu-menu-register-login-menu li.last a:hover {
   background-position: right bottom;
 }
@@ -1732,26 +1769,26 @@ ul.primary li a {
 /**********************************************************
  *                   Banner slideshow
  **********************************************************/
-/* line 2506, sass/style.scss */
+/* line 2567, sass/style.scss */
 #block-views-frontpage_banner-block_1 {
   margin: 0;
 }
-/* line 2509, sass/style.scss */
+/* line 2570, sass/style.scss */
 #block-views-frontpage_banner-block_1 .block-content-inner {
   padding: 0;
 }
-/* line 2513, sass/style.scss */
+/* line 2574, sass/style.scss */
 #block-views-frontpage_banner-block_1 img {
   border: 1px solid #D2D3D2;
 }
-/* line 2517, sass/style.scss */
+/* line 2578, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top {
   position: absolute;
   top: 100px;
   left: -45px;
   width: 1000px;
 }
-/* line 2523, sass/style.scss */
+/* line 2584, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a {
   background: transparent url(../images/slideshow-arrow.png) no-repeat right top;
   height: 36px;
@@ -1760,20 +1797,20 @@ ul.primary li a {
   text-indent: -99999%;
   display: block;
 }
-/* line 2531, sass/style.scss */
+/* line 2592, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a:hover {
   background-position: right bottom;
 }
-/* line 2535, sass/style.scss */
+/* line 2596, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_next_frontpage_banner-block_1 {
   background-position: left top;
   float: right;
 }
-/* line 2539, sass/style.scss */
+/* line 2600, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_next_frontpage_banner-block_1:hover {
   background-position: left bottom;
 }
-/* line 2544, sass/style.scss */
+/* line 2605, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_playpause_frontpage_banner-block_1 {
   display: none;
 }
