@@ -1820,3 +1820,35 @@ ul.primary li a {
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_playpause_frontpage_banner-block_1 {
   display: none;
 }
+
+/**********************************************************
+ *                   Sponsor block
+ **********************************************************/
+/* line 2626, sass/style.scss */
+.sponsor-block {
+  border: 1px solid #CECECE;
+  background: #d3d3d4 url(../images/bg-sponsor-platinum.png) no-repeat left top;
+  padding: 10px;
+}
+/* line 2631, sass/style.scss */
+.sponsor-block .block-content-inner {
+  padding: 0;
+}
+/* line 2635, sass/style.scss */
+.sponsor-block .block-title {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  padding: 0;
+}
+/* line 2641, sass/style.scss */
+.sponsor-block.sponsor-gold {
+  background-color: #C1985F;
+  border-color: #8F6138;
+  background-image: url(../images/bg-sponsor-gold.png);
+}
+/* line 2647, sass/style.scss */
+.sponsor-block.sponsor-silver {
+  background-color: #E0E0E0;
+  border-color: #B8B8B8;
+  background-image: url(../images/bg-sponsor-silver.png);
+}
