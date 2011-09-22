@@ -397,7 +397,7 @@ a {
    footer-container has a 960px width in base.css. */
 #footer-elements {
   background: transparent;
-  color: #cccccc;
+  //color: #cccccc;
   min-height: 20px;
 }
 
@@ -2495,7 +2495,14 @@ ul.primary li a {
      display: none;
      color: $footer-text-color !important;
 	  }
- }	
+  }	
+}
+
+.sponsors-block{
+  .block-content-inner{
+    @include footer-text;
+    margin-top: 1.4em;
+  }
 }
 
 
@@ -2509,8 +2516,7 @@ ul.primary li a {
 		ul { 
 		  list-style-type: none;
 		  margin-left: 0px;
-		  padding-left: 0px;
-		  
+		  padding-left: 0px;  
 		  }
 
 		h2 { @include block-title; }
