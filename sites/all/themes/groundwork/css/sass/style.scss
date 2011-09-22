@@ -2475,6 +2475,28 @@ ul.primary li a {
 /**********************
 *        Footer
 ************************/
+.twitter-block {
+
+  .block-inner {
+    background-color: transparent;	
+    .block-content{ background-color:transparent;
+    }
+  }
+  .tweets-pulled-listing {
+    .tweet-text {
+	    font-family: $footer-font-family;
+			color: $footer-text-color; 
+			font-size:$footer-text-size;
+			a:link{color: $footer-link-color !important}
+   }
+
+   .tweet-author a:link{color: $footer-link-color !important;}    
+   .tweet-time {
+     display: none;
+     color: $footer-text-color !important;
+	  }
+ }	
+}
 
 
 
@@ -2484,7 +2506,12 @@ ul.primary li a {
 		
 	#footer-region {
 	
-		ul, li { list-style-type: none;}
+		ul { 
+		  list-style-type: none;
+		  margin-left: 0px;
+		  padding-left: 0px;
+		  
+		  }
 
 		h2 { @include block-title; }
 
@@ -2493,31 +2520,6 @@ ul.primary li a {
 			margin-top: 1em;
 			font-weight: normal;		
 		}
-		
-	
-		.twitter-block {
-
-      .block-inner {
-        background-color: transparent;	
-				    
-				.block-content{ background-color:transparent;}
-      }
-      .tweets-pulled-listing {
-				
-			  .tweet-text {
-			    font-family: $footer-font-family;
-					color: $footer-text-color; 
-					font-size:$footer-text-size;
-					a:link{color: $footer-link-color !important}
-        }
-
-				.tweet-author a:link{color: $footer-link-color !important;}    
-        .tweet-time {
-          display: none;
-				  color: $footer-text-color !important;
-			  }
-      }	
-    }
   }
 
   #attribution { 

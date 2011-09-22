@@ -1673,7 +1673,35 @@ ul.primary li a {
 /**********************
 *        Footer
 ************************/
-/* line 2481, sass/style.scss */
+/* line 2480, sass/style.scss */
+.twitter-block .block-inner {
+  background-color: transparent;
+}
+/* line 2482, sass/style.scss */
+.twitter-block .block-inner .block-content {
+  background-color: transparent;
+}
+/* line 2486, sass/style.scss */
+.twitter-block .tweets-pulled-listing .tweet-text {
+  font-family: "Lucida Grande", "Verdana";
+  color: #0c285f;
+  font-size: 1em;
+}
+/* line 2490, sass/style.scss */
+.twitter-block .tweets-pulled-listing .tweet-text a:link {
+  color: #1545a3 !important;
+}
+/* line 2493, sass/style.scss */
+.twitter-block .tweets-pulled-listing .tweet-author a:link {
+  color: #1545a3 !important;
+}
+/* line 2494, sass/style.scss */
+.twitter-block .tweets-pulled-listing .tweet-time {
+  display: none;
+  color: #0c285f !important;
+}
+
+/* line 2503, sass/style.scss */
 #footer {
   background: #ededf0 url("../images/bg-footer.png") repeat-x;
   -moz-border-radius: 10px 10px 0 0;
@@ -1683,11 +1711,13 @@ ul.primary li a {
   -khtml-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
 }
-/* line 2487, sass/style.scss */
-#footer #footer-region ul, #footer #footer-region li {
+/* line 2509, sass/style.scss */
+#footer #footer-region ul {
   list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
 }
-/* line 2489, sass/style.scss */
+/* line 2516, sass/style.scss */
 #footer #footer-region h2 {
   margin-top: 12px;
   color: black;
@@ -1699,40 +1729,13 @@ ul.primary li a {
   border-width: 1px;
   border-color: #CCCCCC;
 }
-/* line 2491, sass/style.scss */
+/* line 2518, sass/style.scss */
 #footer #footer-region li {
   list-style-type: none;
   margin-top: 1em;
   font-weight: normal;
 }
-/* line 2500, sass/style.scss */
-#footer #footer-region .twitter-block .block-inner {
-  background-color: transparent;
-}
-/* line 2503, sass/style.scss */
-#footer #footer-region .twitter-block .block-inner .block-content {
-  background-color: transparent;
-}
-/* line 2507, sass/style.scss */
-#footer #footer-region .twitter-block .tweets-pulled-listing .tweet-text {
-  font-family: "Lucida Grande", "Verdana";
-  color: #0c285f;
-  font-size: 1em;
-}
-/* line 2511, sass/style.scss */
-#footer #footer-region .twitter-block .tweets-pulled-listing .tweet-text a:link {
-  color: #1545a3 !important;
-}
-/* line 2514, sass/style.scss */
-#footer #footer-region .twitter-block .tweets-pulled-listing .tweet-author a:link {
-  color: #1545a3 !important;
-}
-/* line 2515, sass/style.scss */
-#footer #footer-region .twitter-block .tweets-pulled-listing .tweet-time {
-  display: none;
-  color: #0c285f !important;
-}
-/* line 2523, sass/style.scss */
+/* line 2528, sass/style.scss */
 #footer #attribution {
   text-align: center;
   color: #0c285f;
@@ -1741,16 +1744,16 @@ ul.primary li a {
 /**********************************************************
  *                   Registration and Login Menu
  **********************************************************/
-/* line 2533, sass/style.scss */
+/* line 2538, sass/style.scss */
 #block-menu-menu-register-login-menu {
   margin: 25px 0 0;
 }
-/* line 2536, sass/style.scss */
+/* line 2541, sass/style.scss */
 #block-menu-menu-register-login-menu ul {
   padding: 0;
   list-style: none;
 }
-/* line 2541, sass/style.scss */
+/* line 2546, sass/style.scss */
 #block-menu-menu-register-login-menu li {
   float: left;
   margin: 0;
@@ -1758,7 +1761,7 @@ ul.primary li a {
   list-style: none;
   list-style-image: none;
 }
-/* line 2548, sass/style.scss */
+/* line 2553, sass/style.scss */
 #block-menu-menu-register-login-menu li.first a {
   width: 160px;
   height: 54px;
@@ -1767,11 +1770,11 @@ ul.primary li a {
   text-indent: -999999%;
   display: block;
 }
-/* line 2556, sass/style.scss */
+/* line 2561, sass/style.scss */
 #block-menu-menu-register-login-menu li.first a:hover {
   background-position: left bottom;
 }
-/* line 2561, sass/style.scss */
+/* line 2566, sass/style.scss */
 #block-menu-menu-register-login-menu li.last a {
   width: 160px;
   height: 54px;
@@ -1780,7 +1783,7 @@ ul.primary li a {
   text-indent: -999999%;
   display: block;
 }
-/* line 2569, sass/style.scss */
+/* line 2574, sass/style.scss */
 #block-menu-menu-register-login-menu li.last a:hover {
   background-position: right bottom;
 }
@@ -1788,15 +1791,15 @@ ul.primary li a {
 /************************************
 *             Participants
 *************************************/
-/* line 2584, sass/style.scss */
+/* line 2589, sass/style.scss */
 #block-views-deltakerliste-block_1 .block-content-inner {
   padding-left: 0px;
 }
-/* line 2588, sass/style.scss */
+/* line 2593, sass/style.scss */
 #block-views-deltakerliste-block_1 td {
   vertical-align: text-top;
 }
-/* line 2592, sass/style.scss */
+/* line 2597, sass/style.scss */
 #block-views-deltakerliste-block_1 .block-title {
   margin-top: 12px;
   color: black;
@@ -1810,19 +1813,19 @@ ul.primary li a {
   margin-bottom: -10px;
   width: 305px;
 }
-/* line 2598, sass/style.scss */
+/* line 2603, sass/style.scss */
 #block-views-deltakerliste-block_1 .value {
   color: #333333;
   font-size: 0.8em;
   padding-top: 5px;
 }
-/* line 2602, sass/style.scss */
+/* line 2607, sass/style.scss */
 #block-views-deltakerliste-block_1 .imagecache-user_image_avatar {
   border-style: outset;
   border-color: #FFF;
   border-width: 1px;
 }
-/* line 2607, sass/style.scss */
+/* line 2612, sass/style.scss */
 #block-views-deltakerliste-block_1 .more-link a, #block-views-deltakerliste-block_1 .more-link a:visited {
   color: #0C285F;
   font-size: 0.8em;
@@ -1832,26 +1835,26 @@ ul.primary li a {
 /**********************************************************
  *                   Banner slideshow
  **********************************************************/
-/* line 2616, sass/style.scss */
+/* line 2621, sass/style.scss */
 #block-views-frontpage_banner-block_1 {
   margin: 0;
 }
-/* line 2619, sass/style.scss */
+/* line 2624, sass/style.scss */
 #block-views-frontpage_banner-block_1 .block-content-inner {
   padding: 0;
 }
-/* line 2623, sass/style.scss */
+/* line 2628, sass/style.scss */
 #block-views-frontpage_banner-block_1 img {
   border: 1px solid #D2D3D2;
 }
-/* line 2627, sass/style.scss */
+/* line 2632, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top {
   position: absolute;
   top: 160px;
   left: -45px;
   width: 1030px;
 }
-/* line 2633, sass/style.scss */
+/* line 2638, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a {
   background: transparent url(../images/slideshow-arrow.png) no-repeat right top;
   height: 36px;
@@ -1861,20 +1864,20 @@ ul.primary li a {
   display: block;
   float: left;
 }
-/* line 2642, sass/style.scss */
+/* line 2647, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a:hover {
   background-position: right bottom;
 }
-/* line 2646, sass/style.scss */
+/* line 2651, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_next_frontpage_banner-block_1 {
   background-position: left top;
   float: right;
 }
-/* line 2650, sass/style.scss */
+/* line 2655, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_next_frontpage_banner-block_1:hover {
   background-position: left bottom;
 }
-/* line 2655, sass/style.scss */
+/* line 2660, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_playpause_frontpage_banner-block_1 {
   display: none;
 }
@@ -1882,44 +1885,44 @@ ul.primary li a {
 /**********************************************************
  *                   Sponsor block
  **********************************************************/
-/* line 2665, sass/style.scss */
+/* line 2670, sass/style.scss */
 .sponsor-block {
   border: 1px solid #CECECE;
   background: #d3d3d4 url(../images/bg-sponsor-platinum.png) no-repeat left top;
   padding: 10px 10px 0;
 }
-/* line 2670, sass/style.scss */
+/* line 2675, sass/style.scss */
 .sponsor-block .block-content-inner {
   padding: 0;
 }
-/* line 2673, sass/style.scss */
+/* line 2678, sass/style.scss */
 .sponsor-block .block-content-inner div.sponsor {
   margin-bottom: 10px;
 }
-/* line 2678, sass/style.scss */
+/* line 2683, sass/style.scss */
 .sponsor-block .block-title {
   font-size: 0.9em;
   text-transform: uppercase;
   padding: 0;
 }
-/* line 2684, sass/style.scss */
+/* line 2689, sass/style.scss */
 .sponsor-block.sponsor-gold {
   background-color: #C1985F;
   border-color: #8F6138;
   background-image: url(../images/bg-sponsor-gold.png);
 }
-/* line 2690, sass/style.scss */
+/* line 2695, sass/style.scss */
 .sponsor-block.sponsor-silver {
   background-color: #E0E0E0;
   border-color: #B8B8B8;
   background-image: url(../images/bg-sponsor-silver.png);
 }
-/* line 2695, sass/style.scss */
+/* line 2700, sass/style.scss */
 .sponsor-block.sponsor-silver .odd, .sponsor-block.sponsor-silver .even {
   float: left;
   margin-right: 8px;
 }
-/* line 2700, sass/style.scss */
+/* line 2705, sass/style.scss */
 .sponsor-block.sponsor-silver .even {
   margin-right: 0;
 }
