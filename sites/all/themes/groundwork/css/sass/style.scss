@@ -2472,18 +2472,6 @@ ul.primary li a {
 /**********************
 *        Footer
 ************************/
-.twitter-block {
-  }
-
-.sponsors-block{
-  .block-content-inner{
-    margin-top: 1.4em;
-  }
-}
-
-.camp-updates-block{ 
-}
-
 #footer {
 	background: $footer-bg-color url('../images/bg-footer.png') repeat-x;
 	@include border-radius( 10px 10px 0 0);
@@ -2500,9 +2488,11 @@ ul.primary li a {
 		h2 { @include block-title; }
 
 		li {
-			list-style-type:none;
-			margin-top: 1em;
-			font-weight: normal;		
+			border-bottom: 1px solid #CCCCCC;
+      font-weight: normal;
+      list-style-type: none;
+      margin-bottom: 1em;
+      padding-bottom: 1em;		
 		}
   }
 
