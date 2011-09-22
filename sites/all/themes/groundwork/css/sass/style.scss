@@ -245,11 +245,11 @@ a {
 #primary-menu-elements {
   background: #EDEDF0 url(../images/bg-main-menu.png) repeat-x 0 bottom;
   @include border-radius(0 0 10px 10px);
-  height: 50px;
+  height: 45px;
   
   li {
     display: inline;
-    margin: 0 3px;
+    margin: 0 13px;
   }
   
 }
@@ -786,9 +786,9 @@ span.search-info-upload {
 .primary-links {
   margin: 0; 
   padding: 10px 0 0;
+  text-align: center;
 
   li {
-    float: left;
     margin: 0 10px 0 0;
     padding: 0;
     display: inline;

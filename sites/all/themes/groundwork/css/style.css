@@ -144,12 +144,12 @@ a:active {
   -ms-border-radius: 0 0 10px 10px;
   -khtml-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
-  height: 50px;
+  height: 45px;
 }
 /* line 250, sass/style.scss */
 #primary-menu-elements li {
   display: inline;
-  margin: 0 3px;
+  margin: 0 13px;
 }
 
 /* line 257, sass/style.scss */
@@ -544,10 +544,10 @@ span#site-name {
 .primary-links {
   margin: 0;
   padding: 10px 0 0;
+  text-align: center;
 }
-/* line 790, sass/style.scss */
+/* line 791, sass/style.scss */
 .primary-links li {
-  float: left;
   margin: 0 10px 0 0;
   padding: 0;
   display: inline;
