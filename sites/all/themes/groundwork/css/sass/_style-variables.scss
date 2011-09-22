@@ -4,16 +4,11 @@ $main-menu-hover-color: lighten($main-menu-color, 20%);
 $main-link-color: #122D63;
 $main-link-color-lighten: lighten($main-link-color, 10%);
 $bg-color: #F9F9F9;
-$footer-text-color: #0C285F;
 $footer-bg-color: #EDEDF0;
 $participants-font-color: #333333;
 
 /* Fonts */
-$footer-text-size: 1em;
-$footer-font-family: 'Lucida Grande','Verdana';
-$footer-link-color: lighten($footer-text-color, 15%);
-$participants-font-family: 'Lucida Grande', 'Verdana';
-$participants-font-size: 0.8em;
+
 
 
 
@@ -33,17 +28,7 @@ $participants-font-size: 0.8em;
 
 
 
-@mixin block-text {
-  color: #333333;
-  font-size:  0.8em;
-}
-
-@mixin block-link {
-  color: #0C285F;
-  font-size:  0.8em;
-}
-
 @mixin footer-text{
 	font-size: 1em;
-	color: #0C285F;
+	color: #333333;
 }

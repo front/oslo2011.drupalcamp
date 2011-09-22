@@ -13,7 +13,7 @@ div.tweets-pulled-listing div.tweet-authorphoto img {
 }
 
 div.tweets-pulled-listing a {
-  color: blue;
+  //color: blue;
 }
 
 div.tweets-pulled-listing .tweet-author a {
@@ -21,7 +21,7 @@ div.tweets-pulled-listing .tweet-author a {
 }
 
 div.tweets-pulled-listing .tweet-time a {
-  color: silver;
+  //color: silver;
 }
 
 div.tweets-pulled-listing  div.tweet-divider {

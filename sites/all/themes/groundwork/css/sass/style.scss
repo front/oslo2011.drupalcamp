@@ -397,7 +397,6 @@ a {
    footer-container has a 960px width in base.css. */
 #footer-elements {
   background: transparent;
-  //color: #cccccc;
   min-height: 20px;
 }
 
@@ -2476,40 +2475,21 @@ ul.primary li a {
 *        Footer
 ************************/
 .twitter-block {
-
-  .block-inner {
-    background-color: transparent;	
-    .block-content{ background-color:transparent;
-    }
   }
-  .tweets-pulled-listing {
-    .tweet-text {
-	    font-family: $footer-font-family;
-			color: $footer-text-color; 
-			font-size:$footer-text-size;
-			a:link{color: $footer-link-color !important}
-   }
-
-   .tweet-author a:link{color: $footer-link-color !important;}    
-   .tweet-time {
-     display: none;
-     color: $footer-text-color !important;
-	  }
-  }	
-}
 
 .sponsors-block{
   .block-content-inner{
-    @include footer-text;
     margin-top: 1.4em;
   }
 }
 
-
+.camp-updates-block{ 
+}
 
 #footer {
 	background: $footer-bg-color url('../images/bg-footer.png') repeat-x;
 	@include border-radius( 10px 10px 0 0);
+	@include footer-text;
 		
 	#footer-region {
 	
@@ -2530,7 +2510,6 @@ ul.primary li a {
 
   #attribution { 
     text-align: center;
-    color: $footer-text-color;
   }
 }
 
@@ -2604,7 +2583,8 @@ ul.primary li a {
   }
 
   .value{
-    @include block-text;
+    color: #333333;
+    font-size:  0.8em;
     padding-top: 5px;
   }
   .imagecache-user_image_avatar{
@@ -2613,7 +2593,8 @@ ul.primary li a {
     border-width: 1px;
   }
   .more-link a, .more-link a:visited{
-    @include block-link;
+    color: #0C285F;
+    font-size:  0.8em;    
     margin-right: -20px;
   }
 }
