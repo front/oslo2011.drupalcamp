@@ -314,8 +314,8 @@
             <div id="footer-message"><?php print $footer_message; ?></div> <!-- /footer-message -->
           <?php endif; ?>
           
-          <?php if ($attribution): ?><?php print $attribution; ?> <!-- /attribution --><?php endif; ?>
-
+          <?php if ($attribution): ?><?php //print $attribution; ?> <!-- /attribution --><?php endif; ?>
+          
           <?php if ($feed_icons): ?>
             <div id="feed-icons"><?php print $feed_icons; ?></div> <!-- /feed icons -->
           <?php endif; ?>
