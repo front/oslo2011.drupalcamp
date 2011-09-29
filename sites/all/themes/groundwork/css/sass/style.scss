@@ -2555,9 +2555,12 @@ ul.primary li a {
   padding: 10px;
   background-color: #FFFFFF;
   border: 1px solid #CCCCCC;
-  color: #2A6827;
   font-size: 1.2em;
   display: block;
+  
+  p {
+    margin: 0;
+  }
 }
 
 /************************************
