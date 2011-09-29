@@ -1,0 +1,13 @@
+<?php
+// $Id$
+
+/**
+ * Implementation of hook_menu_alter()
+ */
+
+function custom_menu_alter(&$items) {
+  // Hide the "Create new account" tab.
+  $items['user/register']['type'] = MENU_CALLBACK;
+}
+
+?>

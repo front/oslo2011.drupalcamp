@@ -1,0 +1,8 @@
+; $Id$
+name = Custom
+description = Custom Module for Drupalcamp
+core = 6.x
+
+package = "Other"
+
+version = "6.x-0.1-dev"
