@@ -1752,18 +1752,30 @@ ul.primary li a {
   background-position: right bottom;
 }
 
+/* Custom registration block */
+/* line 2553, sass/style.scss */
+#block-block-20 {
+  margin: 0;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  color: #2A6827;
+  font-size: 1.2em;
+  display: block;
+}
+
 /************************************
 *             Participants
 *************************************/
-/* line 2559, sass/style.scss */
+/* line 2570, sass/style.scss */
 #block-views-deltakerliste-block_1 .block-content-inner {
   padding-left: 0px;
 }
-/* line 2563, sass/style.scss */
+/* line 2574, sass/style.scss */
 #block-views-deltakerliste-block_1 td {
   vertical-align: text-top;
 }
-/* line 2567, sass/style.scss */
+/* line 2578, sass/style.scss */
 #block-views-deltakerliste-block_1 .block-title {
   margin-top: 12px;
   color: black;
@@ -1777,19 +1789,19 @@ ul.primary li a {
   margin-bottom: -10px;
   width: 305px;
 }
-/* line 2573, sass/style.scss */
+/* line 2584, sass/style.scss */
 #block-views-deltakerliste-block_1 .value {
   color: #333333;
   font-size: 0.8em;
   padding-top: 5px;
 }
-/* line 2578, sass/style.scss */
+/* line 2589, sass/style.scss */
 #block-views-deltakerliste-block_1 .imagecache-user_image_avatar {
   border-style: outset;
   border-color: #FFF;
   border-width: 1px;
 }
-/* line 2583, sass/style.scss */
+/* line 2594, sass/style.scss */
 #block-views-deltakerliste-block_1 .more-link a, #block-views-deltakerliste-block_1 .more-link a:visited {
   color: #0C285F;
   font-size: 0.8em;
@@ -1799,26 +1811,26 @@ ul.primary li a {
 /**********************************************************
  *                   Banner slideshow
  **********************************************************/
-/* line 2593, sass/style.scss */
+/* line 2604, sass/style.scss */
 #block-views-frontpage_banner-block_1 {
   margin: 0;
 }
-/* line 2596, sass/style.scss */
+/* line 2607, sass/style.scss */
 #block-views-frontpage_banner-block_1 .block-content-inner {
   padding: 0;
 }
-/* line 2600, sass/style.scss */
+/* line 2611, sass/style.scss */
 #block-views-frontpage_banner-block_1 img {
   border: 1px solid #D2D3D2;
 }
-/* line 2604, sass/style.scss */
+/* line 2615, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top {
   position: absolute;
   top: 160px;
   left: -45px;
   width: 1030px;
 }
-/* line 2610, sass/style.scss */
+/* line 2621, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a {
   background: transparent url(../images/slideshow-arrow.png) no-repeat right top;
   height: 36px;
@@ -1828,20 +1840,20 @@ ul.primary li a {
   display: block;
   float: left;
 }
-/* line 2619, sass/style.scss */
+/* line 2630, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a:hover {
   background-position: right bottom;
 }
-/* line 2623, sass/style.scss */
+/* line 2634, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_next_frontpage_banner-block_1 {
   background-position: left top;
   float: right;
 }
-/* line 2627, sass/style.scss */
+/* line 2638, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_next_frontpage_banner-block_1:hover {
   background-position: left bottom;
 }
-/* line 2632, sass/style.scss */
+/* line 2643, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_playpause_frontpage_banner-block_1 {
   display: none;
 }
@@ -1849,44 +1861,44 @@ ul.primary li a {
 /**********************************************************
  *                   Sponsor block
  **********************************************************/
-/* line 2642, sass/style.scss */
+/* line 2653, sass/style.scss */
 .sponsor-block {
   border: 1px solid #CECECE;
   background: #d3d3d4 url(../images/bg-sponsor-platinum.png) no-repeat left top;
   padding: 10px 10px 0;
 }
-/* line 2647, sass/style.scss */
+/* line 2658, sass/style.scss */
 .sponsor-block .block-content-inner {
   padding: 0;
 }
-/* line 2650, sass/style.scss */
+/* line 2661, sass/style.scss */
 .sponsor-block .block-content-inner div.sponsor {
   margin-bottom: 10px;
 }
-/* line 2655, sass/style.scss */
+/* line 2666, sass/style.scss */
 .sponsor-block .block-title {
   font-size: 0.9em;
   text-transform: uppercase;
   padding: 0;
 }
-/* line 2661, sass/style.scss */
+/* line 2672, sass/style.scss */
 .sponsor-block.sponsor-gold {
   background-color: #C1985F;
   border-color: #8F6138;
   background-image: url(../images/bg-sponsor-gold.png);
 }
-/* line 2667, sass/style.scss */
+/* line 2678, sass/style.scss */
 .sponsor-block.sponsor-silver {
   background-color: #E0E0E0;
   border-color: #B8B8B8;
   background-image: url(../images/bg-sponsor-silver.png);
 }
-/* line 2672, sass/style.scss */
+/* line 2683, sass/style.scss */
 .sponsor-block.sponsor-silver .odd, .sponsor-block.sponsor-silver .even {
   float: left;
   margin-right: 8px;
 }
-/* line 2677, sass/style.scss */
+/* line 2688, sass/style.scss */
 .sponsor-block.sponsor-silver .even {
   margin-right: 0;
 }
