@@ -91,7 +91,7 @@ profile_load_profile($account);
 <?php endif ?>
  
 <?php if ($account->profile_drupalservice == '1'): ?>
-<li>I offer Druplal related services.</li>
+<li>I offer Drupal related services.</li>
 <?php endif ?>
  
 <?php if ($account->profile_drusupport == '1'): ?>
