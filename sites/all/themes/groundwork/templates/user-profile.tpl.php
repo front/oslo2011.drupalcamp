@@ -57,11 +57,11 @@ profile_load_profile($account);
   <table>
     <tr>
       <?php if($account->profile_linkedin): ?>
-      <td><a href="<?php print check_url($account->profile_linkedin); ?>"><img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x25.png" width="160" height="25" border="0" alt="Besøk <?php print check_plain($account->profile_name); ?>s profil på LinkedIn" /></a></td>
+      <td><a href="<?php print check_url($account->profile_linkedin); ?>"><img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x25.png" width="160" height="25" border="0" alt="Visit <?php print check_plain($account->profile_name); ?>s profile on LinkedIn" /></a></td>
       <?php endif; ?>
 
       <?php if($account->profile_twitter): ?>
-      <td><a href="<?php print check_url($account->profile_twitter); ?>"><img src="http://twitter-badges.s3.amazonaws.com/follow_me-b.png" alt="Følg <?php print check_plain($account->profile_name); ?> på Twitter" /></a></td>
+      <td><a href="<?php print check_url($account->profile_twitter); ?>"><img src="http://twitter-badges.s3.amazonaws.com/follow_me-b.png" alt="Follow <?php print check_plain($account->profile_name); ?> on Twitter" /></a></td>
       <?php endif; ?>
     </tr>
   </table>
@@ -79,47 +79,51 @@ profile_load_profile($account);
 
 <ul> 
 <?php if ($account->profile_drucontribmodules == '1'): ?>
-<li>Jeg har bidratt til modulutvikling</li>
+<li>I have contributed to module developement.</li>
 <?php endif ?>
  
 <?php if ($account->profile_drucontribtheme == '1'): ?>
-<li>Jeg har bidratt til utseendemalutvikling</li>
+<li>I have contributed to theme developement.</li>
 <?php endif ?>
 
 <?php if ($account->profile_drucontriblocale == '1'): ?>
-<li>Jeg har bidratt til oversettelseprosjekter</li>
+<li>I have contributed to translation projects</li>
 <?php endif ?>
  
 <?php if ($account->profile_drupalservice == '1'): ?>
-<li>Jeg tilbyr Drupal-relaterte tjenester</li>
+<li>I offer Druplal related services.</li>
 <?php endif ?>
  
 <?php if ($account->profile_drusupport == '1'): ?>
-<li>Jeg hjelper i support-forum</li>
+<li>I help in the support forums.</li>
 <?php endif ?>
  
 <?php if ($account->profile_drupalconantwerp == '1'): ?>
-<li>Jeg deltok på DrupalCon Antwerp 2005 i FOSDEM</li>
+<li>I attended DrupalCon Antwerp 2005 FOSDEM</li>
 <?php endif ?>
  
 <?php if ($account->profile_drupalconbrussels == '1'): ?>
-<li>Jeg deltok på DrupalCon Brussels 2006</li>
+<li>I attended DrupalCon Brussels 2006</li>
 <?php endif ?>
  
 <?php if ($account->profile_drupalconbarcelona == '1'): ?>
-<li>Jeg deltok på DrupalCon Barcelona 2007</li>
+<li>I participated on DrupalCon Barcelona 2007</li>
 <?php endif ?>
  
 <?php if ($account->profile_drupalconszeged == '1'): ?>
-<li>Jeg deltok på DrupalCon Szeged, Hungary 2008</li>
+<li>I attended DrupalCon Szeged, Hungary 2008</li>
 <?php endif ?>
  
 <?php if ($account->profile_drupalconparis == '1'): ?>
-<li>Jeg deltok på DrupalCon Paris 2009</li>
+<li>I attended DrupalCon Paris 2009</li>
 <?php endif ?>
  
 <?php if ($account->profile_drupalconcopenhagen == '1'): ?>
-<li>Jeg deltok på DrupalCon Copenhagen 2010</li>
+<li>I attended DrupalCon Copenhagen 2010</li>
+<?php endif ?>
+
+<?php if ($account->profile_drupalconlondon == '1'): ?>
+<li>I attended DrupalCon London 2011</li>
 <?php endif ?>
 
 </ul>
