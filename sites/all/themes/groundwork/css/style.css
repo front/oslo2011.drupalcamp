@@ -1743,10 +1743,10 @@ ul.primary li a {
 }
 /* line 2534, sass/style.scss */
 #block-menu-menu-register-login-menu li.first a:hover {
-  background-position: left bottom;
+  background-position: left -54px;
 }
 /* line 2539, sass/style.scss */
-#block-menu-menu-register-login-menu li.last a {
+#block-menu-menu-register-login-menu li a.login, #block-menu-menu-register-login-menu li a.logout {
   width: 160px;
   height: 54px;
   background: transparent url(../images/btn-register.png) right top;
@@ -1755,12 +1755,25 @@ ul.primary li a {
   display: block;
 }
 /* line 2547, sass/style.scss */
-#block-menu-menu-register-login-menu li.last a:hover {
-  background-position: right bottom;
+#block-menu-menu-register-login-menu li a.login:hover, #block-menu-menu-register-login-menu li a.logout:hover {
+  background-position: right -54px;
+}
+/* line 2552, sass/style.scss */
+#block-menu-menu-register-login-menu li a.logout {
+  background-position: right -108px;
+}
+/* line 2555, sass/style.scss */
+#block-menu-menu-register-login-menu li a.logout:hover {
+  background-position: right -162px;
+}
+
+/* line 2562, sass/style.scss */
+body.logged-in a.login {
+  display: none !important;
 }
 
 /* Custom registration block */
-/* line 2556, sass/style.scss */
+/* line 2568, sass/style.scss */
 #block-block-20 {
   margin: 0;
   padding: 10px;
@@ -1769,7 +1782,7 @@ ul.primary li a {
   font-size: 1.2em;
   display: block;
 }
-/* line 2564, sass/style.scss */
+/* line 2576, sass/style.scss */
 #block-block-20 p {
   margin: 0;
 }
@@ -1777,15 +1790,15 @@ ul.primary li a {
 /************************************
 *             Participants
 *************************************/
-/* line 2576, sass/style.scss */
+/* line 2588, sass/style.scss */
 #block-views-deltakerliste-block_1 .block-content-inner {
   padding-left: 0px;
 }
-/* line 2580, sass/style.scss */
+/* line 2592, sass/style.scss */
 #block-views-deltakerliste-block_1 td {
   vertical-align: text-top;
 }
-/* line 2584, sass/style.scss */
+/* line 2596, sass/style.scss */
 #block-views-deltakerliste-block_1 .block-title {
   margin-top: 12px;
   color: black;
@@ -1799,19 +1812,19 @@ ul.primary li a {
   margin-bottom: -10px;
   width: 305px;
 }
-/* line 2590, sass/style.scss */
+/* line 2602, sass/style.scss */
 #block-views-deltakerliste-block_1 .value {
   color: #333333;
   font-size: 0.8em;
   padding-top: 5px;
 }
-/* line 2595, sass/style.scss */
+/* line 2607, sass/style.scss */
 #block-views-deltakerliste-block_1 .imagecache-user_image_avatar {
   border-style: outset;
   border-color: #FFF;
   border-width: 1px;
 }
-/* line 2600, sass/style.scss */
+/* line 2612, sass/style.scss */
 #block-views-deltakerliste-block_1 .more-link a, #block-views-deltakerliste-block_1 .more-link a:visited {
   color: #0C285F;
   font-size: 0.8em;
@@ -1821,26 +1834,26 @@ ul.primary li a {
 /**********************************************************
  *                   Banner slideshow
  **********************************************************/
-/* line 2610, sass/style.scss */
+/* line 2622, sass/style.scss */
 #block-views-frontpage_banner-block_1 {
   margin: 0;
 }
-/* line 2613, sass/style.scss */
+/* line 2625, sass/style.scss */
 #block-views-frontpage_banner-block_1 .block-content-inner {
   padding: 0;
 }
-/* line 2617, sass/style.scss */
+/* line 2629, sass/style.scss */
 #block-views-frontpage_banner-block_1 img {
   border: 1px solid #D2D3D2;
 }
-/* line 2621, sass/style.scss */
+/* line 2633, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top {
   position: absolute;
   top: 160px;
   left: -45px;
   width: 1030px;
 }
-/* line 2627, sass/style.scss */
+/* line 2639, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a {
   background: transparent url(../images/slideshow-arrow.png) no-repeat right top;
   height: 36px;
@@ -1850,20 +1863,20 @@ ul.primary li a {
   display: block;
   float: left;
 }
-/* line 2636, sass/style.scss */
+/* line 2648, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a:hover {
   background-position: right bottom;
 }
-/* line 2640, sass/style.scss */
+/* line 2652, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_next_frontpage_banner-block_1 {
   background-position: left top;
   float: right;
 }
-/* line 2644, sass/style.scss */
+/* line 2656, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_next_frontpage_banner-block_1:hover {
   background-position: left bottom;
 }
-/* line 2649, sass/style.scss */
+/* line 2661, sass/style.scss */
 #block-views-frontpage_banner-block_1 .views-slideshow-controls-top a#views_slideshow_singleframe_playpause_frontpage_banner-block_1 {
   display: none;
 }
@@ -1871,44 +1884,44 @@ ul.primary li a {
 /**********************************************************
  *                   Sponsor block
  **********************************************************/
-/* line 2659, sass/style.scss */
+/* line 2671, sass/style.scss */
 .sponsor-block {
   border: 1px solid #CECECE;
   background: #d3d3d4 url(../images/bg-sponsor-platinum.png) no-repeat left top;
   padding: 10px 10px 0;
 }
-/* line 2664, sass/style.scss */
+/* line 2676, sass/style.scss */
 .sponsor-block .block-content-inner {
   padding: 0;
 }
-/* line 2667, sass/style.scss */
+/* line 2679, sass/style.scss */
 .sponsor-block .block-content-inner div.sponsor {
   margin-bottom: 10px;
 }
-/* line 2672, sass/style.scss */
+/* line 2684, sass/style.scss */
 .sponsor-block .block-title {
   font-size: 0.9em;
   text-transform: uppercase;
   padding: 0;
 }
-/* line 2678, sass/style.scss */
+/* line 2690, sass/style.scss */
 .sponsor-block.sponsor-gold {
   background-color: #C1985F;
   border-color: #8F6138;
   background-image: url(../images/bg-sponsor-gold.png);
 }
-/* line 2684, sass/style.scss */
+/* line 2696, sass/style.scss */
 .sponsor-block.sponsor-silver {
   background-color: #E0E0E0;
   border-color: #B8B8B8;
   background-image: url(../images/bg-sponsor-silver.png);
 }
-/* line 2689, sass/style.scss */
+/* line 2701, sass/style.scss */
 .sponsor-block.sponsor-silver .odd, .sponsor-block.sponsor-silver .even {
   float: left;
   margin-right: 8px;
 }
-/* line 2694, sass/style.scss */
+/* line 2706, sass/style.scss */
 .sponsor-block.sponsor-silver .even {
   margin-right: 0;
 }

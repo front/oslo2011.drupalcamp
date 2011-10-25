@@ -2532,11 +2532,11 @@ ul.primary li a {
       display: block;
   
       &:hover {
-       background-position: left bottom;
+       background-position: left -54px;
       }
     }  
     
-    &.last a {
+    a.login, a.logout {
       width: 160px;
       height: 54px;
       background: transparent url(../images/btn-register.png) right top;
@@ -2545,10 +2545,22 @@ ul.primary li a {
       display: block;
 
       &:hover {
-        background-position: right bottom;
+        background-position: right -54px;
       }  
     }
+    
+    a.logout {
+      background-position: right -108px;
+      
+      &:hover {
+        background-position: right -162px;
+      }
+    }
   }
+}
+
+body.logged-in a.login { // Hide login button when logged in.
+  display: none !important;
 }
 
 
